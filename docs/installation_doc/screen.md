@@ -20,25 +20,25 @@ subSidebar: false
 
 1.安装screen
 
-```
+```bash
 sudo apt install screen
 ```
 
 2.创建会话
 
-```
+```bash
 screen -S zhenxun
 ```
 
 3.进入真寻目录
 
-```
+```bash
 cd .....
 ```
 
 4.启动！
 
-```
+```bash
 poetry shell    # 进入虚拟环境
 python3 bot.py
 ```
@@ -49,7 +49,7 @@ python3 bot.py
 :::tip
 使用以下命令恢复会话
 
-```
+```bash
 screen -r zhenxun
 ```
 

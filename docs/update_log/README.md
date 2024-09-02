@@ -2,9 +2,350 @@
 title: 更新日志
 ---
 
-## 2022/5/3 \[v0.1.5.1]
+### 2022/9/19
 
-* 商品使用函数可以添加参数ShopParam，从中获取user_id等以及自己提供的参数
+* 更换bilibili_sub获取用户昵称用的API&尝试修了一下get_video() [@pull/1097](https://github.com/HibiKier/zhenxun_bot/pull/1097)
+* 修复csgo每日开箱可以多开一次
+
+### 2022/9/18
+
+* 修复 bilireq 版本过低导致 B 站视频解析错误 [@pull/1090](https://github.com/HibiKier/zhenxun_bot/pull/1096)
+
+### 2022/9/16
+
+* fix: bilibili_sub, azur_draw_card [@pull/1090](https://github.com/HibiKier/zhenxun_bot/pull/1090)
+* 修复原神资源查询查询完毕后图片存储错误
+* b站订阅发送 与 b站订阅 使用相同开关，即：关闭b站订阅
+
+### 2022/9/10
+
+* 自定义群欢迎消息参数不完全时提示报错
+* 修改bt插件的url地址 [@pull/1067](https://github.com/HibiKier/zhenxun_bot/pull/1067)
+
+### 2022/9/8
+
+* 添加插件数据初始化判断
+
+### 2022/9/4
+
+* 旧词条提供图片迁移（需要重新获取old_model文件，并将数据库中user_qq为0的数据删除）
+
+### 2022/9/3
+
+* 原神玩家查询增加须弥地区 [@pull/1053](https://github.com/HibiKier/zhenxun_bot/pull/1053)
+* av号覆盖全面，且修复av号链接 [@pull/1033](https://github.com/HibiKier/zhenxun_bot/pull/1033)
+* 修复词条含有CQ回答的模糊匹配无法被解析
+* 禁言检测图片在内存中获取图片hash
+* B站订阅在群里中任意群管理员可以统一管理（原来为管理员1无法删除管理员2的订阅）
+* 修复原神资源查询地图api数据变更导致更新的地图不完全
+
+### 2022/8/27
+
+* 修复签到积分双倍后，日志记录获得积分变4倍问题 [@pull/1044](https://github.com/HibiKier/zhenxun_bot/pull/1044)
+
+### 2022/8/26
+
+* 修复群管理员无法添加词条
+* 修复词条关键词"问"前空格问题
+
+### 2022/8/23
+
+* 修了下模糊匹配 issue#1026 [@pull/1026](https://github.com/HibiKier/zhenxun_bot/pull/1026)
+
+### 2022/8/22
+
+* 修复首次安装时词条旧表出错（因为根本就没有这张表！）
+* 取消配置替换定时任务，统一存储
+* 对米游社cookie进行判断，整合米游社签到信息 [@pull/1014](https://github.com/HibiKier/zhenxun_bot/pull/1014)
+* 修正尘歌壶和质变仪图片获取地址 [@pull/1010](https://github.com/HibiKier/zhenxun_bot/pull/1010)
+* 修复词库问答 **很多** 问题[@pull/1012](https://github.com/HibiKier/zhenxun_bot/pull/1012)
+
+### 2022/8/21 \[v0.1.6.3]
+
+* 重构群词条，改为词库Plus，增加 精准|模糊|正则 问题匹配，问题与回答均支持at，image，face，超级用户额外提供 全局|私聊 词库设置，数据迁移目前只提供了问题和回答都是纯文本的词条
+* 修复b站转发解析av号无法解析
+* B站订阅直播订阅支持短号
+* 开箱提供重置开箱命令，重置今日所有开箱数据（重置次数，并不会删除今日已开箱记录）
+* 提供全局字典GDict，通过from utils.manager import GDict导入
+* 适配omega 13w张图的数据结构表（建议删表重导）
+* 除首次启动外将配置替换加入单次定时任务，加快启动速度
+* fix: WordBank.check() [@pull/1008](https://github.com/HibiKier/zhenxun_bot/pull/1008)
+* 改进插件 `我有一个朋友`，避免触发过于频繁 [@pull/1001](https://github.com/HibiKier/zhenxun_bot/pull/1001)
+* 原神便笺新增洞天宝钱和参量质变仪提示 [@pull/1005](https://github.com/HibiKier/zhenxun_bot/pull/1005)
+* 新增米游社签到功能，自动领取（白嫖）米游币 [@pull/991](https://github.com/HibiKier/zhenxun_bot/pull/991)
+
+### 2022/8/14
+
+* 修复epic未获取到时间时出错
+* 修复订阅主播时动态获取的id是直播间id
+
+### 2022/8/8
+
+* 修复赛马娘重载卡池失败的问题 [@pull/969](https://github.com/HibiKier/zhenxun_bot/pull/969)
+
+### 2022/8/3
+
+* 修复 bili动态链接在投稿视频时URL和分割线连在一起 [@pull/951](https://github.com/HibiKier/zhenxun_bot/pull/961)
+* 更新 Epic 免费游戏商城链接拼接规则 [@pull/957](https://github.com/HibiKier/zhenxun_bot/pull/957)
+
+### 2022/8/6
+
+* 修复了原神自动签到返回invalid request的问题，新增查看我的cookie命令 [@pull/971](https://github.com/HibiKier/zhenxun_bot/pull/971)
+
+### 2022/7/31
+
+* 对nonebot.beta4中PluginMeta进行解析
+* 修改webui元祖类型无法正确转换类型
+* 查看订阅以图片形式发送
+* 修复pix无图时不会提醒而是出错
+
+### 2022/7/30
+
+* 替换了cos和bt的url [@pull/951](https://github.com/HibiKier/zhenxun_bot/pull/951)
+* 发言记录统计添加日消息统计 [@pull/953](https://github.com/HibiKier/zhenxun_bot/pull/953)
+
+### 2022/7/24 \[v0.1.6.2]
+
+* 订阅up动态提供直链
+
+### 2022/7/23
+
+* 优化开箱次数判断
+
+### 2022/7/16
+
+* cos提供连发命令
+* 修复B站视频解析中b23解析错误
+
+### 2022/7/13
+
+* B站订阅提供配置项`LIVE_MSG_AT_ALL`,`UP_MSG_AT_ALL`：控制UP动态投稿和直播是否AT全体
+* 修改了Omega图库检测的数据库文件名
+* game_utils提供了Game类
+
+### 2022/7/7
+
+* 微博热搜选择单条热搜时也会检测时效性 [@pull/891](https://github.com/HibiKier/zhenxun_bot/pull/891)
+
+### 2022/7/4
+
+* 修复商品未设置限购时无法购买
+* 修复B站订阅UP动态 [@pull/886](https://github.com/HibiKier/zhenxun_bot/pull/886)
+* 修复色图命令带tag时配置项`MAX_ONCE_NUM2FORWARD`无法生效
+
+### 2022/7/3 \[v0.1.6.1]
+
+* BagUser提供方法`check_props`方法，用于判断用户是否含有该道具并是否使用
+* 优化商品显示图片，提供限制，限购，折扣提示
+* 修复图库内图片无法被连续删除的问题 [@pull/879](https://github.com/HibiKier/zhenxun_bot/pull/879)
+* 色图提供配置项`MAX_ONCE_NUM2FORWARD`：群聊中单次发送图片数量达到指定时使用合并转发
+* 优化修复了商品修改命令
+* B站订阅UP动态改为详情页截图
+
+### 2022/6/28
+
+* 修复色图插件api修改无法搜索图片 [@pull/866](https://github.com/HibiKier/zhenxun_bot/pull/866)
+
+### 2022/6/26
+
+* 替换了bt URL
+* PIX当使用pid查询图片时，会发送该pid下所有图片
+* 商店提供了每日购买次数限制
+
+### 2022/6/24
+
+* 对WSL虚拟机 代理 添加写法 [@pull/847](https://github.com/HibiKier/zhenxun_bot/pull/847)
+
+### 2022/6/21
+
+* update parse_bilibili [@pull/840](https://github.com/HibiKier/zhenxun_bot/pull/840)
+
+### 2022/6/19 \[v0.1.6.0]
+
+* 暂时使用hook修复webui中plugins2setting修改时会改变plugins2setting.cmd为字符串
+* 修复原神树脂重复提醒的bug [@pull/828](https://github.com/HibiKier/zhenxun_bot/pull/828)
+* 词条优化问题展示,修改含机器人昵称和@逻辑 [@pull/835](https://github.com/HibiKier/zhenxun_bot/pull/835)
+
+### 2022/6/18
+
+* 修复昵称系统`BLACK_WORD`为空时造成报错
+* 修复特殊头像时背景透明化出错
+* 修复text2image纯文本时换行时颜色不统一
+* 优化webUI，当有插件出错时不会影响其他插件显示
+* 优化Config类型注释 [@pull/830](https://github.com/HibiKier/zhenxun_bot/pull/830)
+* 优化browser
+
+### 2022/6/17
+
+* 修复wordbank的一些小问题 @pull/820
+
+### 2022/6/14
+
+* AsyncHttpx提供可关闭 ssl 验证参数 [@pull/812](https://github.com/HibiKier/zhenxun_bot/pull/812)
+* fix: 自动更新群组 [@pull/810](https://github.com/HibiKier/zhenxun_bot/pull/810)
+* fix: 修复添加词条时对answer中图片的处理 [@pull/806](https://github.com/HibiKier/zhenxun_bot/pull/806)
+* 修复pix中指定num无法生效
+* 替换了bt URL
+
+### 2022/6/13
+
+* Windows 重启适配 [@pull/804](https://github.com/HibiKier/zhenxun_bot/pull/804)
+* 色图等提供修改md5方法 [@pull/800](https://github.com/HibiKier/zhenxun_bot/pull/800)
+* webui中token.json文件写入补充 [@pull/798](https://github.com/HibiKier/zhenxun_bot/pull/798)
+* 修复识图某些图片可能会出错
+
+### 2022/6/11
+
+* pix当只有一个tag时且为数字时可以通过添加'#'防止判定为数量
+
+### 2022/6/9
+
+* 修复b站订阅同群二人以上相同订阅时发送多次信息
+* 修复超级用户帮助中缺少了 ‘插件商店’ 相关帮助
+* 昵称系统提供了详细帮助
+
+### 2022/6/5 \[v0.1.5.9]
+
+* webui修复plugin2setting中cmd从list转变为str
+* 当命令`我的金币`被风控时将以图片形式发送
+* fix gold_redbag [@pull/763](https://github.com/HibiKier/zhenxun_bot/pull/763)
+* 金币红包功能增加更多封面 [@pull/764](https://github.com/HibiKier/zhenxun_bot/pull/764)
+
+### 2022/6/3
+
+* 插件仓库在已安装插件边上会提示\[已安装]
+* 修复ShopRegister kwargs某些字段无效
+* 调整了一下查看所有请求中的年龄绘制 [@pull/745](https://github.com/HibiKier/zhenxun_bot/pull/745)
+* 修复原神树脂提醒bug [@pull/756](https://github.com/HibiKier/zhenxun_bot/pull/756)
+
+### 2022/5/31
+
+* 修复开启/关闭全部功能时帮助图片未重绘 [@pull/721](https://github.com/HibiKier/zhenxun_bot/pull/721)
+* bot_friend_group将group_handle.修改为friend_handle. [@pull/711](https://github.com/HibiKier/zhenxun_bot/pull/711)
+* 修复发红包图片背景未透明化;修复原神树脂提醒参数错误 [@pull/712](https://github.com/HibiKier/zhenxun_bot/pull/712)
+* 修复抽卡插件：方舟更新UP池信息时，若公告的第一个池子过期会导致无法更新UP池信息 [@pull/707](https://github.com/HibiKier/zhenxun_bot/pull/707)
+* 商店插件判断是否有requirements.txt文件 [@pull/705](https://github.com/HibiKier/zhenxun_bot/pull/705)
+* 删除原神玩家查询api返回变更的多余键值
+* 优化了text2image方法
+
+### 2022/5/29 \[v0.1.5.8]
+
+* 提供了真寻适配仓库的插件 安装/卸载 操作
+* 暂时关闭了插件资源清空
+* 通过指令安装插件时会在插件目录下生成plugin_info.json记录当前插件信息
+
+### 2022/5/28
+
+* 修复私聊无法添加昵称
+* 修复原神玩家查询层岩巨渊地下矿区没开时报错
+* 修复 ```休息吧``` 无法阻断戳一戳
+* 当图库无图片时，戳一戳将略过发送图片
+* 新增搜图提供配置项```ALLOW_GROUP_R18```：允许在群聊中使用r18参数
+* 新增自动更新插件```UPDATE_REMIND```：新版本提醒，原配置项```AUTO_UPDATE_ZHENXUN```改为自动更新升级
+* black_word新增当群权限为-1时不再检测该群
+* 修复非超级用户绑定原神cookie会被black_word阻拦
+* 修复微博热搜报错,发红包小bug [@pull/688](https://github.com/HibiKier/zhenxun_bot/pull/688)
+* 更多的中文提示
+
+### 2022/5/26
+
+* 修复\[滴滴滴]会被转义成&#91;滴滴滴&#93;导致无法触发的问题
+* 将一些错误以中文提示输出
+* 更新BT搜索源地址 [@pull/668](https://github.com/HibiKier/zhenxun_bot/pull/668)
+* 更新抽卡插件 [@pull/667](https://github.com/HibiKier/zhenxun_bot/pull/667)
+
+### 2022/5/25
+
+* 修复webui中CountLimit字段limit_type类型错误
+* 修改nickname插件：一处文案错误，添加敏感词 [@pull/624](https://github.com/HibiKier/zhenxun_bot/pull/624)
+* gamedraw的ba卡池搬运了过来并且进行了真寻的适配 [@pull/617](https://github.com/HibiKier/zhenxun_bot/pull/617)
+* feat: stream downloading and progress [@pull/607](https://github.com/HibiKier/zhenxun_bot/pull/607)
+* 修改翻译插件，添加缺失的冒号 [@pull/602](https://github.com/HibiKier/zhenxun_bot/pull/602)
+* 修复碧蓝航线/明日方舟up池解析出错的问题 [@pull/610](https://github.com/HibiKier/zhenxun_bot/pull/602)
+
+### 2022/5/24
+
+* fix: 修正了签到时日期时间的显示不补齐零的bug （符合日期时间表示法 ISO 8601）[@pull/600](https://github.com/HibiKier/zhenxun_bot/pull/600)
+* 更新"微博热搜"接口 [@pull/579](https://github.com/HibiKier/zhenxun_bot/pull/579)
+* refactor&fix(manager): modify argument [@pull/576](https://github.com/HibiKier/zhenxun_bot/pull/576)
+* 修复复读不能复读图片的问题 [@pull/573](https://github.com/HibiKier/zhenxun_bot/pull/573)
+* 修复抽卡插件：方舟抽卡的抽取和显示问题 [@pull/581](https://github.com/HibiKier/zhenxun_bot/pull/581)
+
+### 2022/5/23 \[v0.1.5.6]
+
+* 修复"清除已删除插件数据" [@pull/545](https://github.com/HibiKier/zhenxun_bot/pull/545)
+* 修复有置顶的up主B站动态获取失败 [@pull/552](https://github.com/HibiKier/zhenxun_bot/pull/552)
+* 添加pixiv搜图多关键词支持;修复p站搜图数量参数问题 [@pull/441](https://github.com/HibiKier/zhenxun_bot/pull/441)
+* 修复开箱更新价格错误传参
+* 修复pix无法正确查询uid
+* 新增色图插件添加配置项```ALLOW_GROUP_R18```：允许群聊中使用色图r
+* 新增PIX插件添加配置项```ALLOW_GROUP_SETU```：允许非超级用户使用-s参数
+* 新增PIX插件添加配置项```ALLOW_GROUP_R18```：允许非超级用户使用-r参数
+
+### 2022/5/22 \[v0.1.5.4]
+
+* 使用action自动更新poetry.lock [@pull/515](https://github.com/HibiKier/zhenxun_bot/pull/515)
+* fix(bilibili_sub): card is None and timeout [@pull/516](https://github.com/HibiKier/zhenxun_bot/pull/516)
+* 修复了epic有时获取新免费游戏消息时获取不到图片
+* 修复好感度满时签到出错（虽然是不可能满的
+* 修复原神资源图标下载路径错误
+* 修复自动更新群组可能失败
+
+### 2022/5/21
+
+* 修复搜番无结果时报错无正确反馈
+* 解锁了windows上无法使用playwright的限制
+* 修复p搜对应pid有多张图时出错，改为连续发送图片
+* 修复p搜对数字的错误判断
+* 修复添加商品折扣无法正确添加
+* 修复了bilibili订阅直播间订阅up名称不一致的问题
+* 修复原神玩家查询没开地图时报错
+* 最低priority修改为 999
+* 修复刷屏检测失效
+* 修复刷屏检测设置命令无法生效
+* 优化刷屏显示设置禁言时长显示，并改为分钟
+* 修复了多连开箱无法指定武器箱
+* 修复识番链接无法正确获取
+* 新增真寻入群时即刻刷新权限
+* 提高了微博热搜截图的等待时间
+
+### 2022/5/19
+
+* fix: mihoyo bbs api changed [@pull/357](https://github.com/HibiKier/zhenxun_bot/pull/357)
+* Add word_clouds [@pull/265](https://github.com/HibiKier/zhenxun_bot/pull/265)
+* Fix wrong live streamer name [@pull/284](https://github.com/HibiKier/zhenxun_bot/pull/284)
+
+### 2022/5/16
+
+* 词条支持图片和@问题 [@pull/160](https://github.com/HibiKier/zhenxun_bot/pull/160)
+
+### 2022/5/15
+
+* 修复了商店商品无法正确添加
+* 修复了多张色图无法正确发送
+
+### 2022/5/14
+
+* 修复B站动态生成失败的问题 [@pull/159](https://github.com/HibiKier/zhenxun_bot/pull/159)
+
+### 2022/5/11
+
+* fix: 更改p搜api，解决p搜无法使用的问题 [@pull/155](https://github.com/HibiKier/zhenxun_bot/pull/155)
+
+### 2022/5/9 \[v0.1.5.3]
+
+* 替换了疫情API
+* 修复了私聊.ban/.unban出错
+
+### 2022/5/5
+
+* 修改bilibili_sub插件在windows平台下报错 [@pull/153](https://github.com/HibiKier/zhenxun_bot/pull/153)
+
+### 2022/5/3 \[v0.1.5.2]
+
+* 商品使用函数可以添加特定参数，例如：user_id, group_id, ShopParam等以及自己提供的参数
+* 添加商品注册装饰器shop_register
+* 修复商品函数kwargs无法获取参数值
 
 ## 2022/5/1
 

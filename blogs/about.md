@@ -42,6 +42,10 @@ Linux，可以使用 __Ubuntu__ 等，Windows上虽然也可以成功部署，�
 
 欢迎加入 [是真寻酱哒](https://jq.qq.com/?_wv=1027&k=u8PgBkMZ)
 
+## 技术交流
+
+欢迎加入 [真寻酱的技术群](https://jq.qq.com/?_wv=1027&k=u8PgBkMZ)
+
 ## 救命！我部署或使用出了问题
 
 莫慌，请先在[issues](https://github.com/HibiKier/zhenxun_bot/issues)和[FQA](/development/faq/FAQ)尝试寻找解决方案  
@@ -56,8 +60,11 @@ __开源协议__
 
 本项目使用 [AGPL-3.0 License](https://github.com/HibiKier/zhenxun_bot/blob/main/LICENSE) 作为开源协议。
 
-__感谢__
+__致谢__
 ===
+
+__项目致谢__
+---
 
 ___以下项目为真寻提供了不少的帮助和灵感___  
 [botuniverse / onebot](https://github.com/botuniverse/onebot)：超棒的机器人协议  
@@ -71,5 +78,64 @@ ___以下项目为真寻提供了不少的帮助和灵感___
 [H-K-Y / Genshin_Impact_bot](https://github.com/H-K-Y/Genshin_Impact_bot)：原神bot，这是一个基于nonebot和HoshinoBot的原神娱乐及信息查询插件  
 [NothAmor / nonebot2_luxun_says](https://github.com/NothAmor/nonebot2_luxun_says)：基于nonebot2机器人框架的鲁迅说插件  
 [Kyomotoi / AnimeThesaurus](https://github.com/Kyomotoi/AnimeThesaurus)：一个~~特二刺螈~~（文爱）的适用于任何bot的词库  
-[Ailitonia / omega-miya](https://github.com/Ailitonia/omega-miya)：基于nonebot2的qq机器人
+[Ailitonia / omega-miya](https://github.com/Ailitonia/omega-miya)：基于nonebot2的qq机器人  
 [KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件
+
+__发电致谢__
+---
+
+<details>
+
+<summary> 感谢投喂 </summary>
+
+|       赞助者 (非常感谢捏)        |      金额    |
+|:-----------------|:-----------|
+|[shenqi](https://afdian.net/u/fa923a8cfe3d11eba61752540025c377)| ￥12 |
+|[A_Kyuu](https://afdian.net/u/b83954fc2c1211eba9eb52540025c377)| ￥200 |
+|[疯狂混沌](https://afdian.net/u/789a2f9200cd11edb38352540025c377)| ￥5|
+|[Tpoeyopo](https://afdian.net/u/0571b15e7b6411ed885e52540025c377)|￥24|
+|[投冥](https://afdian.net/a/144514mm)|￥6|
+|[茶喵](https://afdian.net/u/fd22382eac4d11ecbfc652540025c377)|￥6|
+|[AemokpaTNR](https://afdian.net/u/1169bb8c8a9611edb0c152540025c377)|￥24|
+|[爱发电用户_wrxn](https://afdian.net/u/4aa03d20db4311ecb1e752540025c377)|￥6|
+|[qqw](https://afdian.net/u/b71db4e2cc3e11ebb76652540025c377)|￥6|
+|[溫一壺月光下酒](https://afdian.net/u/ad667a5c650c11ed89bf52540025c377)|￥6|
+|[伝木](https://afdian.net/u/246b80683f9511edba7552540025c377)|￥12|
+|[阿奎](https://afdian.net/u/da41f72845d511ed930d52540025c377)|￥112|
+|[醉梦尘逸](https://afdian.net/u/bc11d2683cd011ed99b552540025c377)|￥6|
+|[Iris](https://afdian.net/a/MikoIris)|￥24|
+|[Yui](https://afdian.net/u/c5e6289e5f0a11ea81ef52540025c377)|￥6|
+|[Abc](https://afdian.net/u/870dc10a3cd311ed828852540025c377)|￥6|
+|[本喵无敌哒](https://afdian.net/u/dffaa9005bc911ebb69b52540025c377)|￥16.04|
+|[椎名冬羽](https://afdian.net/u/ca1ebd64395e11ed81b452540025c377)|￥6|
+|[kaito](https://afdian.net/u/a055e20a498811eab1f052540025c377)|￥6|
+|[墨然](https://afdian.net/u/8aa5874a644d11eb8a6752540025c377)|￥6|
+|[爱发电用户_T9e4](https://afdian.net/u/2ad1bb82f3a711eca22852540025c377)|￥12|
+|[请问一份爱多少钱](https://afdian.net/u/f57ef6602dbd11ed977f52540025c377)|￥6|
+|[咸鱼鱼鱼鱼](https://afdian.net/u/8e39b9a400e011ed9f4a52540025c377)|￥48|
+|[Kafka](https://afdian.net/u/41d66798ef6911ecbc5952540025c377)|￥24|
+|[笑柒XIAO_Q7](https://afdian.net/u/4696db5c529111ec84ea52540025c377)|￥36|
+|[noahzark](https://afdian.net/a/noahzark)|￥24|
+|[ze roller](https://afdian.net/u/0e599e96257211ed805152540025c377)|￥6|
+|[腊条](https://afdian.net/u/f739c4d69eca11eba94b52540025c377)|￥6|
+|[感冒土豆](https://afdian.net/a/kuai364354200)|￥6|
+|[爱发电用户_TBsd](https://afdian.net/u/db638b60217911ed9efd52540025c377)|￥24|
+|[我只会cvs](https://afdian.net/u/6d31c266214111ed807f52540025c377)|￥15|
+|[烟寒若雨](https://afdian.net/u/067bd2161eec11eda62b52540025c377)|￥54|
+|[ln](https://afdian.net/u/b51914ba1c6611ed8a4e52540025c377)|￥24|
+|[阿咪要女装](https://afdian.net/u/3d8f30581a2911edba6d52540025c377)|￥30|
+|[爱发电用户_c58s](https://afdian.net/u/a6ad8dda195e11ed9a4152540025c377)|￥24|
+|[爱发电用户_eNr9](https://afdian.net/u/05fdb41c0c9a11ed814952540025c377)|￥6|
+|[花漾](https://afdian.net/a/meowo)|￥6|
+|[Excalibur](https://afdian.net/u/69b76e9ec77b11ec874f52540025c377)|￥24|
+|[爱发电用户_Bc6j](https://afdian.net/u/8546be24f44111eca64052540025c377)|￥6|
+|[阿咪和歌歌的老婆](https://afdian.net/u/af63700eeaf411eca4e552540025c377)|￥48|
+|[副驾驶啦啦啦](https://afdian.net/u/6f27f372f2a411eca09752540025c377)|￥6|
+|[嘿小欧](https://afdian.net/u/daa4bec4f24911ec82e552540025c377)|￥6|
+|[回忆的秋千](https://afdian.net/u/e315d9c6f14f11ecbeef52540025c377)|￥24|
+|[十年くん](https://github.com/shinianj)|￥96|
+|[哇](https://afdian.net/u/9b266244f23911eca19052540025c377)|￥6|
+|[yajiwa](https://github.com/yajiwa)|￥262|
+|[爆金币](https://afdian.net/u/0d78879ef23711ecb22452540025c377)|￥5.2|
+
+</details>

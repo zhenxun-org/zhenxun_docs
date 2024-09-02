@@ -134,3 +134,4 @@ title: 插件索引列表
 |[查看群欢迎消息](/docs/help_doc/public_plugins/other_plugins/other_plugins.html#查看群欢迎消息)|`group_welcome_msg`|HibiKier|0.1|None|`plugins/group_welcome_msg`
 |[我的权限/信息](/docs/help_doc/public_plugins/other_plugins/other_plugins.html#我的权限/信息)|`my_info`|HibiKier|0.1|5|`plugins/my_info`
 |[B站转发解析](/docs/help_doc/public_plugins/other_plugins/other_plugins.html#B站转发解析)|`parse_bilibili_json`|HibiKier|0.1|None|`plugins/parse_bilibili_json`
+|[词云](/docs/help_doc/public_plugins/other_plugins/other_plugins.html#B站转发解析)|`word_clouds`|yajiwa|0.1|5|`plugins/word_clouds`

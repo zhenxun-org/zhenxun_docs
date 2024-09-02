@@ -12,7 +12,7 @@
   * 没有重写matcher，利于增删额外插件
 * 普通插件 应该包含：  
   * `__zx_plugin_name__`：插件名
-  * `__plugin_usage`：用法
+  * `__plugin_usage__`：用法
   * `__plugin_des__`：简介
   * `__plugin_cmd__`：命令
   * `__plugin_settings__` ：插件通用设置  
@@ -30,11 +30,29 @@
   * `__plugin_resources__`: 资源管理
   * `__plugin_configs__`: 插件配置
 
+:::tip
+已支持 **PluginMetaData**
+
+```python
+_\_plugin_meta_\_ = PluginMetadata(
+    name="测试插件",                    # __zx_plugin_name__
+    description="测试插件元信息",       # __plugin_des__
+    usage="无法使用",                   # __plugin_usage__
+    config=Config,                      # __plugin_configs__
+    extra={
+        "author": "NoneBot",             # 'author' -> __plugin_author__
+        "version": "0.1.0",             # 'version' -> __plugin_version__ : meta数据中的version仅修改插件文件部分，对于Config文件必定修改
+        },        
+)
+```
+
+:::
+
 _\_zx\_plugin\_name\_\_
 ---
 
-* __类型__：`str`
-* __说明__：  
+* **类型**：`str`
+* **说明**：  
 插件名称，为插件普通帮助的展示内容，基本所有模块都必须有 `__zx_plugin_name__`  
 通过在__zx_plugin_name__中添加 [Admin] [Superuser] [Hidden] 控制初始化帮助时插件的分类  
 基本为以下四类：  
@@ -53,8 +71,8 @@ __zx_plugin_name__ = "自动检测群员数量 [Hidden]"
 _\_plugin\_usage\_\_
 ---
 
-* __类型__：`str`
-* __说明__：  
+* **类型**：`str`
+* **说明**：  
 插件帮助说明
 示例：
 
@@ -68,26 +86,26 @@ usage:
 """.strip()
 ```
 
-_\_plugin\_super\_usage\_\_
+_\_plugin\_superuser\_usage\_\_
 ---
 
-* __类型__：`str`
-* __说明__：  
+* **类型**：`str`
+* **说明**：  
 当非 `[Superuser]` 插件含有超级用户的功能时，在该属性中编写超级用户的额外帮助  
 帮助写法与 `__plugin_usage__` 一致
 
 _\_plugin\_des\_\_
 ---
 
-* __类型__：`str`
-* __说明__：  
+* **类型**：`str`
+* **说明**：  
 插件简介，不建议太长，详细介绍可以写在usage中，主要在`详细帮助`中显示
 
 _\_plugin\_cmd\_\_
 ---
 
-* __类型__：`List[str]`
-* __说明__：  
+* **类型**：`List[str]`
+* **说明**：  
 插件指令，相同功能的插件指令请使用`/`分离，如果是超级用户的功能，请在命令后添加`[_superuser]`  
 示例：
 
@@ -99,15 +117,15 @@ __plugin_cmd__ = ["我的签到/好感度", "好感度排行", "清空好感度 
 _\_plugin\_settings\_\_
 ---
 
-* __类型__：`Dict[str, Union[str, int]]`
-* __说明__：  
+* **类型**：`Dict[str, Union[str, int]]`
+* **说明**：  
 插件的通用设置，普通插件与纯管理员插件会有所不同  
 示例：
 
 ```python
 # 普通插件，以下除cmd外为默认值
 __plugin_settings__ = {
-    "level": 5,             # 群权限等级，请不要设置为1或9，若无特殊情况请设置为5
+    "level": 5,             # 群权限等级，请不要设置为1或999，若无特殊情况请设置为5
     "default_status": True,     # 进群时的默认开关状态
     "limit_superuser": False,   # 开关插件的限制是否限制超级用户
     "cmd": ["b封面", 'B封面'],   # 命令别名，主要用于帮助和开关
@@ -136,8 +154,8 @@ __plugin_settings__ = {
 _\_plugin\_task\_\_
 ---
 
-* __类型__：`Dict[str, Union[str, str]]`
-* __说明__：  
+* **类型**：`Dict[str, Union[str, str]]`
+* **说明**：  
 为你提供一个或多个开关，主要用于被动类插件的开关  
 示例：
 
@@ -166,8 +184,8 @@ async def _(...):
 _\_plugin\_type\_\_
 ---
 
-* __类型__：`Tuple[Union[str, int]]`
-* __说明__：  
+* **类型**：`Tuple[Union[str, int]]`
+* **说明**：  
 为普通插件分类，当没有`__plugin_type__`时，将统一放置普通功能分类中  
 相同分类的插件在帮助图片中将会统合在一起  
 示例：
@@ -185,22 +203,22 @@ __plugin_type__ = ('原神相关', 1)
 _\_plugin\_version\_\_
 ---
 
-* __类型__：`Union[float, int]`
-* __说明__：  
+* **类型**：`Union[float, int]`
+* **说明**：  
 插件版本，将作为插件自动更新的依照
 
 _\_plugin\_author\_\_
 ---
 
-* __类型__：`str`
-* __说明__：  
+* **类型**：`str`
+* **说明**：  
 插件作者
 
 _\_plugin\_cd\_limit\_\_
 ---
 
-* __类型__：`Dict[str, Optional[Union[int, str]]]`
-* __说明__：  
+* **类型**：`Dict[str, Optional[Union[int, str]]]`
+* **说明**：  
 插件cd限制
 
 ```python
@@ -225,8 +243,8 @@ __plugin_cd_limit__ = {}
 _\_plugin\_block\_limit\_\_
 ---
 
-* __类型__：`Dict[str, Optional[str]]`
-* __说明__：  
+* **类型**：`Dict[str, Optional[str]]`
+* **说明**：  
 插件阻塞限制
 
 ```python
@@ -248,8 +266,8 @@ __plugin_block_limit__ = {}
 _\_plugin\_count\_limit\_\_
 ---
 
-* __类型__：`Dict[str, Optional[Union[int, str]]]`
-* __说明__：  
+* **类型**：`Dict[str, Optional[Union[int, str]]]`
+* **说明**：  
 插件每日调用次数限制
 
 ```python
@@ -272,8 +290,8 @@ __plugin_count_limit__ = {}
 _\_plugin\_resource\_\_
 ---
 
-* __类型__：`Dict[Union[str, Path], Union[str, Path]]`
-* __说明__：  
+* **类型**：`Dict[Union[str, Path], Union[str, Path]]`
+* **说明**：  
 将插件目录下资源移动要指定文件夹并记录保存，在插件删除后自动删除对应资源文件
 
 ```python
@@ -286,11 +304,11 @@ __plugin_resources__ = {
 _\_plugin\_configs\_\_
 ---
 
-* __类型__：`Dict[str, Union[int, str, float, Dict[str, Union[int, str, float]]]]`
-* __说明__：  
+* **类型**：`Dict[str, Union[int, str, float, Dict[str, Union[int, str, float]]]]`
+* **说明**：  
 插件配置项，用于生成统一的config.yaml文件供用户统一修改  
 其中 key 大小写不敏感，生成与返回会统一使用大写  
-__注__
+**注**
   * 公用部分例如`hibiapi`等请直接添加和使用`hibiapi`配置组，包括`pixiv`等
   * 公用部分可以新增和删除配置项
 
