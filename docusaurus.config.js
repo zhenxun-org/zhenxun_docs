@@ -61,7 +61,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "真寻BOT",
+        title: "小真寻",
         logo: {
           alt: "Logo",
           src: "img/logo.svg",
@@ -72,6 +72,18 @@ const config = {
             sidebarId: "installSidebar",
             position: "left",
             label: "安装文档",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "faqSidebar",
+            position: "right",
+            label: "FAQ",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "aboutSidebar",
+            position: "right",
+            label: "关于",
           },
           {
             href: "https://github.com/HibiKier/zhenxun_bot",
