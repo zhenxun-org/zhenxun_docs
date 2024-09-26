@@ -37,7 +37,7 @@ WebUI安装
 
 将压缩包中`dist`文件夹改名为`public`后解压到`data/web_ui`文件夹中，如下所示  
 
-在目录`data/webui/public`下  
+在目录`data/web_ui/public`下  
 
 ![_](/img/install/webui_2.png)
 
