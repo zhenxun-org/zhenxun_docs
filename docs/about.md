@@ -51,7 +51,7 @@ Linux，可以使用 __Ubuntu__ 等，Windows也可以获得很好的支持
 
 ## 救命！我部署或使用出了问题
 
-莫慌，请先在[issues](https://github.com/HibiKier/zhenxun_bot/issues)和[FQA](/development/faq/FAQ)尝试寻找解决方案  
+莫慌，请先在[issues](https://github.com/HibiKier/zhenxun_bot/issues)和[FQA](/faq)尝试寻找解决方案  
 如果还是没有解决，可选择以下方式  
 
 * 尝试百度/Google
@@ -63,7 +63,7 @@ __开源协议__
 
 本项目使用 [AGPL-3.0 License](https://github.com/HibiKier/zhenxun_bot/blob/main/LICENSE) 作为开源协议。
 
-__致谢__
+<!-- __致谢__
 ===
 
 __项目致谢__
@@ -82,9 +82,9 @@ __以下项目为真寻提供了不少的帮助和灵感__
 [NothAmor / nonebot2_luxun_says](https://github.com/NothAmor/nonebot2_luxun_says)：基于nonebot2机器人框架的鲁迅说插件  
 [Kyomotoi / AnimeThesaurus](https://github.com/Kyomotoi/AnimeThesaurus)：一个~~特二刺螈~~（文爱）的适用于任何bot的词库  
 [Ailitonia / omega-miya](https://github.com/Ailitonia/omega-miya)：基于nonebot2的qq机器人  
-[KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件
+[KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件 -->
 
-__发电致谢__
+<!-- __发电致谢__
 ---
 
 <details>
@@ -141,4 +141,4 @@ __发电致谢__
 |[yajiwa](https://github.com/yajiwa)|￥262|
 |[爆金币](https://afdian.net/u/0d78879ef23711ecb22452540025c377)|￥5.2|
 
-</details>
+</details> -->

@@ -4,33 +4,46 @@ import styles from "./styles.module.css"
 
 const FeatureList = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    title: "权限控制",
+    Svg: require("@site/static/img/zhenxun3.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        自带插件管理功能，可以实现插件的权限控制，针对群组内，私聊内，全局和单个指定群组的插件管理，
+        同时nonebot2插件如果带有PluginMetadata，同样也会被纳入插件管理中，无需额外配置。
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "WebUI",
+    Svg: require("@site/static/img/zhenxun4.svg").default,
+    description: <>集成功能丰富的真寻WebUI，方便管理。</>,
+  },
+  {
+    title: "轻松开发",
+    Svg: require("@site/static/img/zhenxun6.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        除了原生nonebot2外，提供大量已实现方法帮助开发，对于真寻内部插件也提供相应接口和方法。
       </>
     ),
   },
   {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "插件众多",
+    Svg: require("@site/static/img/zhenxun2.svg").default,
+    description: <>原plugins目录以及第三方插件库，轻松扩展。</>,
+  },
+  {
+    title: "支持多平台",
+    Svg: require("@site/static/img/zhenxun5.svg").default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <>使用Alconna来构建响应期，内部区分频道代码逻辑，支持大部分平台使用。</>
+    ),
+  },
+  {
+    title: "有文档(很可爱)",
+    Svg: require("@site/static/img/zhenxun1.svg").default,
+    description: (
+      <>这么可爱的小真寻还提供了文档，对可爱的小真寻还有什么好要求的捏。</>
     ),
   },
 ]
