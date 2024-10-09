@@ -128,15 +128,24 @@ const config = {
           //   ],
           // },
           {
+            title: "QQ",
+            items: [
+              {
+                label: "是真寻酱哒",
+                href: "https://jq.qq.com/?_wv=1027&k=u8PgBkMZ",
+              },
+              {
+                label: "真寻的技术群",
+                href: "https://qm.qq.com/q/YYYt5rkMYc",
+              },
+            ],
+          },
+          {
             title: "More",
             items: [
-              // {
-              //   label: "Blog",
-              //   to: "/blog",
-              // },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/HibiKier/zhenxun_bot",
               },
             ],
           },
