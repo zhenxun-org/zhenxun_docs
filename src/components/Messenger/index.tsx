@@ -21,22 +21,25 @@ const Messenger: React.FC<MessengerProps> = ({ msgs }) => {
         <div className="qq-title">可爱的小真寻</div>
         <Menu className="qq-options" width={20} height={20} />
       </div>
-
-      <div className="qq-chat-content">
-        {msgs.map((message, index) => (
-            <div key={index} className={`qq-message ${message.position}`}>
-              {message.position === 'left' && <div className="qq-avatar qq-avatar-xun"></div>}
-              <div className="qq-text">
-                {message.imgSrc && (
-                  <img src={`/zhenxun_bot/${message.imgSrc}`} alt="图片" className="qq-image" />
-                )}
-                {message.msg && (
-                  <div>{message.msg}</div>
-                )}
-              </div>
-              {message.position === 'right' && <div className="qq-avatar qq-avatar-hua"></div>}
-            </div>
-          ))}
+      <div className='chat-container-border'>
+        <div className='chat-container'>
+          <div className="qq-chat-content">
+            {msgs.map((message, index) => (
+                <div key={index} className={`qq-message ${message.position}`}>
+                  {message.position === 'left' && <div className="qq-avatar qq-avatar-xun"></div>}
+                  <div className="qq-text">
+                    {message.imgSrc && (
+                      <img src={`/zhenxun_bot/${message.imgSrc}`} alt="图片" className="qq-image" />
+                    )}
+                    {message.msg && (
+                      <div>{message.msg}</div>
+                    )}
+                  </div>
+                  {message.position === 'right' && <div className="qq-avatar qq-avatar-hua"></div>}
+                </div>
+              ))}
+          </div>
+        </div>
       </div>
       <div className="qq-input-bar">
         <input className="qq-input" type="text" readOnly  />
