@@ -1,0 +1,36 @@
+---
+title: 笨蛋检测(help_help)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+功能名称当命令检测，专门克制一些 at 小真寻却不发送指令而发送功能名称的笨蛋
+
+- 插件类型: `DEPENDANT`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+无
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻CSGO开箱" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/help_help/0.png",
+      msg: `桀桀桀，预判到会有 '笨蛋' 把功能名称当命令用，特地前来嘲笑！但还是好心来帮帮你啦！
+请at我发送 '帮助CSGO开箱' 或者 '帮助223' 来获取该功能帮助`,
+    },
+  ]}
+/>

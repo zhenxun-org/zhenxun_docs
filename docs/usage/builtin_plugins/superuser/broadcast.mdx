@@ -1,0 +1,40 @@
+---
+title: 广播(broadcast)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+昭告天下！
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 广播 [消息]
+  - 说明: 全局群组广播
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "广播 大家好，今天出道的是可爱的椛椛哦！" },
+    {
+      position: "left",
+      msg: `正在发送..请等一下哦!`,
+    },
+    {
+      position: "left",
+      msg: `发送广播完成!
+成功广播 2 个群组`,
+    },
+  ]}
+/>

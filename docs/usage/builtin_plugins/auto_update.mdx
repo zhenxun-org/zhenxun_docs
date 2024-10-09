@@ -1,0 +1,41 @@
+---
+title: 自动更新(auto_update)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+检查更新真寻最新版本，包括了自动更新
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `auto_update`
+  - `UPDATE_REMIND`:
+    - 说明: 是否检测更新版本
+    - 类型: `bool`
+    - 默认值: `True`
+
+### 指令
+
+- 检查更新 ?['dev', 'main', 'release']
+  - 说明: 在'dev', 'main', 'release'中更新其中一个版本
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "检查更新 release" },
+    {
+      position: "left",
+      msg: `版本更新完成
+版本: v0.2.1 -> v0.2.2
+请重新启动真寻以完成更新!`,
+    },
+  ]}
+/>

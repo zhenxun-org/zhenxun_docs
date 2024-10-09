@@ -1,0 +1,47 @@
+---
+title: 好友群组列表(fg_manage)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+昭告天下！
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 好友列表
+
+- 群组列表
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻好友列表" },
+    {
+      position: "left",
+      msg: `| UID | 昵称 | 共4个好友
+66600000 小Q
+123456789 A_nmi
+98765432 _
+234325555 hibiki`,
+    },
+    { position: "right", msg: "真寻群组列表" },
+    {
+      position: "left",
+      msg: `| GID | 名称 | 共2个群组
+456666555 笨蛋程序员
+123123123 test1`,
+    },
+  ]}
+/>

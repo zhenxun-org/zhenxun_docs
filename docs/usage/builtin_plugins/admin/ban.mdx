@@ -1,0 +1,65 @@
+---
+title: Ban(ban)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+你被逮捕了！丢进小黑屋！封禁用户以及群组，屏蔽消息
+
+- 插件类型: `SUPER_AND_ADMIN`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `ban`
+  - `BAN_LEVEL`
+    - 说明: ban/unban 所需要的管理员权限等级
+    - 类型: `int`
+    - 默认值: `5`
+
+### 指令
+
+- ban [at 用户] ?[-t [时长(分钟)]]
+
+  - 说明: 封禁用户，默认永久，可以通过`-t`参数指定时长
+
+- unban @用户
+  - 说明: 解封用户
+
+### 超级用户额外指令
+
+- ban [At 用户/用户 Id] ?[-t [时长]] ?[-g [gid]]
+
+  - 说明: 通过用户 id 封禁用户，或通过-g 参数封禁群组
+
+- ban 列表 ?[-u [uid]] ?[-g [gid]]
+
+  - 说明: 查看封禁列表，可以通过`-u`指定用户，`-g`指定群组
+
+- 用户 ban 列表
+
+- 群组 ban 列表
+
+- unban --id [idx]
+  - 说明: 通过 id 来 unban
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "ban@_" },
+    {
+      position: "left",
+      msg: "对 @_ 狠狠惩戒了一番，一脚踢进了小黑屋! 在里面乖乖呆  到世界湮灭 吧!",
+    },
+    { position: "right", msg: "unban @_" },
+    {
+      position: "left",
+      msg: "将 @_ 从黑屋中拉了出来并急救了一下!",
+    },
+  ]}
+/>

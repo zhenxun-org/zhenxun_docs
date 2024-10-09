@@ -1,0 +1,44 @@
+---
+title: 用户权限管理(set_admin)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+用户权限管理
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `群组`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 添加权限 [level] [@user]
+
+  - 说明: 给指定用户添加权限，该权限不受群管检测修改
+
+- 删除权限 [@user]
+  - 说明: 删除指定用户权限，该权限不受群管检测修改
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "添加权限 9 @_" },
+    {
+      position: "left",
+      msg: `成功为 @_ 设置权限：0 -> 9`,
+    },
+    { position: "right", msg: "删除权限 @_" },
+    {
+      position: "left",
+      msg: `成功删除 @_ 的权限等级!`,
+    },
+  ]}
+/>

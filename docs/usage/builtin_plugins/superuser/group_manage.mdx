@@ -1,0 +1,85 @@
+---
+title: 管理群操作(group_manage)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+管理群操作
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 修改群权限 [level] ?[group_id]
+
+  - 说明: 设置群权限等级，在群组中时可省略群组 id
+
+- 添加群白名单 [group_id]
+
+  - 说明: 将群组添加到白名单中，可以使用全局禁用的指令
+
+- 删除群白名单 [group_id]
+
+  - 说明: 将群组从白名单中移除
+
+- 添加群认证 [group_id]
+
+  - 说明: 添加群组认证信息
+
+- 删除群认证 [group_id]
+
+  - 说明: 删除群组认证信息
+
+- 退群 [group_id]
+  - 说明: 退出群组
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "修改群权限 9" },
+    {
+      position: "left",
+      msg: `群权限修改成功!`,
+    },
+    { position: "right", msg: "修改群权限 9 123123123" },
+    {
+      position: "left",
+      msg: `群权限修改成功!`,
+    },
+    { position: "right", msg: "添加群白名单 123123123" },
+    {
+      position: "left",
+      msg: `添加群白名单成功!`,
+    },
+    { position: "right", msg: "删除群白名单 123123123" },
+    {
+      position: "left",
+      msg: `删除群白名单成功!`,
+    },
+    { position: "right", msg: "添加群认证 123123123" },
+    {
+      position: "left",
+      msg: `添加群认证成功!`,
+    },
+    { position: "right", msg: "删除群认证 123123123" },
+    {
+      position: "left",
+      msg: `删除群认证成功!`,
+    },
+    { position: "right", msg: "退群 123123123" },
+    {
+      position: "left",
+      msg: `你，不准退!`,
+    },
+  ]}
+/>

@@ -1,0 +1,86 @@
+---
+title: 签到(sign_in)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+每日签到，证明你在这里  
+会影响色图概率和开箱次数，以及签到的随机道具获取
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `sign_in`:
+
+  - `MAX_SIGN_GOLD`
+    - 说明: 签到好感度加成额外获得的最大金币数
+    - 类型: `int`
+    - 默认值: `200`
+  - `SIGN_CARD1_PROB`
+    - 说明: 签到好感度双倍加持卡 1 掉落概率
+    - 类型: `float`
+    - 默认值: `0.2`
+  - `SIGN_CARD2_PROB`
+    - 说明: 签到好感度双倍加持卡 2 掉落概率
+    - 类型: `float`
+    - 默认值: `0.09`
+  - `SIGN_CARD3_PROB`
+    - 说明: 签到好感度双倍加持卡 3 掉落概率
+    - 类型: `float`
+    - 默认值: `0.05`
+  - `IMAGE_STYLE`
+    - 说明: 签到图片样式, [normal, zhenxun]
+    - 类型: `str`
+    - 默认值: `zhenxun`
+
+- send_setu
+  - `INITIAL_SETU_PROBABILITY`
+    - 说明: 初始色图概率，总概率 = 初始色图概率 + 好感度
+    - 类型: `float`
+    - 默认值: `0.7`
+
+### 指令
+
+- 签到
+
+- 我的签到
+
+- 好感度排行
+
+  - 说明: 当前群组好感度排行
+
+- 好感度总排行
+  - 说明: 全局好感度排行
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "签到" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/sign_in/0.png",
+    },
+    { position: "right", msg: "我的签到" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/sign_in/1.png",
+    },
+    { position: "right", msg: "好感度排行" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/sign_in/2.png",
+    },
+    { position: "right", msg: "好感度总排行" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/sign_in/3.png",
+    },
+  ]}
+/>

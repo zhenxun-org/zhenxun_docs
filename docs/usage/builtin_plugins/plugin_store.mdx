@@ -1,0 +1,71 @@
+---
+title: 插件商店(plugin_store)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+通过指定仓库安装真寻插件
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 插件商店
+
+- 添加插件 [id/module]
+
+  - 说明: 安装指定插件，id 和 module 通过插件商店获取
+
+- 移除插件 [id/module]
+
+  - 说明: 安装指定插件，id 和 module 通过插件商店获取
+
+- 更新插件 [id/module]
+
+  - 说明: 安装指定插件，id 和 module 通过插件商店获取
+
+- 搜索插件 [s]
+
+  - 说明: 通过插件名称或作者搜索插件
+
+- 更新全部插件
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "插件商店" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/plugin_store/0.png",
+    },
+    { position: "right", msg: "安装插件 35" },
+    {
+      position: "left",
+      msg: `正在添加插件 Id: 35`,
+    },
+    {
+      position: "left",
+      msg: `插件 词云 安装成功! 重启后生效`,
+    },
+    { position: "right", msg: "移除插件 35" },
+    {
+      position: "left",
+      msg: `插件 词云 移除成功! 重启后生效`,
+    },
+    { position: "right", msg: "搜索插件 云" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/plugin_store/1.png",
+    },
+  ]}
+/>

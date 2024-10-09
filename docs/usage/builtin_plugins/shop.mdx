@@ -1,0 +1,76 @@
+---
+title: 商店(shop)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+商店系统[金币回收计划]
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 商店
+
+- 我的金币
+
+- 我的道具
+
+- 使用道具 [name/id] ?[num]
+
+  - 说明: 使用指定道具，指定道具名称或道具 id，id 通过我的道具获取，num 为使用数量，不指定则默认使用一个
+
+- 购买道具 [name/id] ?[num]
+
+  - 说明: 购买指定道具，指定道具名称或道具 id，id 通过商店获取，num 为使用数量，不指定则默认使用一个
+
+- 金币排行 ?[num]
+  - 说明: 查看当前群组内金币排行，不指定 num 时默认为前 10
+- 金币总排行 ?[num]
+  - 说明: 查看全局内金币排行，不指定 num 时默认为前 10
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "商店" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/shop/0.png",
+    },
+    { position: "right", msg: "我的金币" },
+    {
+      position: "left",
+      msg: `你的当前余额: 1746`,
+    },
+    { position: "right", msg: "我的道具" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/shop/1.png",
+    },
+    { position: "right", msg: "购买道具1" },
+    {
+      position: "left",
+      msg: `花费 30.0 金币购买 好感度双倍加持卡Ⅰ ×1 成功！`,
+    },
+    { position: "right", msg: "使用道具 3" },
+    {
+      position: "left",
+      msg: `使用道具 好感度双倍加持卡Ⅰ 1 次成功！`,
+    },
+    { position: "right", msg: "金币排行" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/shop/2.png",
+    },
+  ]}
+/>

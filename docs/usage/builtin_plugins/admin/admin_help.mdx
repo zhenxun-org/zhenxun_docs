@@ -1,0 +1,45 @@
+---
+title: 管理员帮助(admin_help)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+查看群组管理员帮助
+
+- 插件类型: `ADMIN`
+- 响应规则: `群组`
+- 插件等级: `5`
+
+### 配置项
+
+- `admin_help`
+  - `TYPE`
+    - 说明: 管理员帮助样式，normal, zhenxun
+    - 类型: `str`
+    - 默认值: `zhenxun`
+
+### 指令
+
+- 管理员帮助
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "管理员帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/admin/admin_help/0.png",
+      msg: "zhenxun版本",
+    },
+    { position: "right", msg: "管理员帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/admin/admin_help/1.png",
+      msg: "normal版本",
+    },
+  ]}
+/>

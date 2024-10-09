@@ -1,0 +1,42 @@
+---
+title: 重载配置(reload_setting)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+重新加载 config.yaml
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `reload_setting`
+  - `AUTO_RELOAD`
+    - 说明: 是否自动重载配置
+    - 类型: `boolean`
+    - 默认值: `false`
+  - `AUTO_RELOAD_TIME`
+    - 说明: 自动重载配置的时间间隔
+    - 类型: `int`
+    - 默认值: `60`
+
+### 指令
+
+- 重载配置
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻重载配置" },
+    {
+      position: "left",
+      msg: `重载完成!`,
+    },
+  ]}
+/>

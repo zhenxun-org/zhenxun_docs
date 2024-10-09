@@ -1,0 +1,154 @@
+.qq-chat-interface {
+  width: 100%;
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qq-header {
+  background-color: #D47E8F;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
+
+.qq-back, .qq-options {
+  cursor: pointer;
+}
+
+.qq-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.qq-chat-content {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #FBE4E4;
+  background-image: url('/static/img/chat/chat_bk.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 500px;
+  min-height: 300px;
+  overflow: auto;
+}
+
+.qq-image {
+  /* max-width: 40%;
+  border-radius: 8px;
+  margin: 5px 0; */
+  max-width: 300px; /* 设置图片的最大宽度 */
+  max-height: 300px; /* 设置图片的最大高度 */
+  width: auto;
+  height: auto;
+}
+.qq-message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.qq-message.left .qq-text {
+  background-color: #fff;
+  color: #000;
+}
+
+.qq-message.right {
+  justify-content: flex-end;
+}
+
+.qq-message.right .qq-text {
+  background-color: white;
+  color: #000;
+}
+
+.qq-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.qq-avatar-xun {
+
+  background-image: url('/static/img/chat/xun.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.qq-avatar-hua {
+
+  background-image: url('/static/img/chat/hua.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qq-text {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: pre-wrap
+}
+
+.qq-input-bar {
+  display: flex;
+  background-color: #FBE4E4;
+  padding: 5px;
+}
+
+.qq-input-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #3ABFF8;
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 25px;
+}
+
+.qq-send-button {
+  padding: 0 15px;
+  background-color: #3ABFF8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 25px;
+}
+
+.qq-footer {
+  align-items: center;
+  color: hsl(var(--bc)/.6);
+  display: grid;
+  font-size: 1rem;
+  grid-template-columns: repeat(6,minmax(0,1fr));
+  line-height: 1.5rem;
+  padding-bottom: .25rem;
+  padding-top: .25rem;
+  text-align: center;
+  background-color: #FBE4E4;
+  color: #747A82;
+}
+
+
+.svg-inline--fa {
+  box-sizing: content-box;
+  overflow: visible;
+  height: 15px;
+}

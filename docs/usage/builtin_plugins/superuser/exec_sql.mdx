@@ -1,0 +1,42 @@
+---
+title: 数据库操作(exec_sql)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+执行 sql 语句与查看表
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 查看所有表
+
+- exec [sql]
+  - 说明: 执行 sql 语句
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻查看所有表" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/superuser/exec_sql/0.png",
+    },
+    { position: "right", msg: "真寻exec select * from group_console" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/superuser/exec_sql/1.png",
+    },
+  ]}
+/>

@@ -1,0 +1,35 @@
+---
+title: 我的信息(info)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+查看个人信息
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 查看个人信息 ?[at]
+  - 说明: 查看个人信息， 当指定 at 用户查看指定对象信息
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "我的信息" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/info/0.png",
+    },
+  ]}
+/>

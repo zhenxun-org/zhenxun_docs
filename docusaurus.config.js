@@ -75,6 +75,12 @@ const config = {
           },
           {
             type: "docSidebar",
+            sidebarId: "usageSidebar",
+            position: "left",
+            label: "使用文档",
+          },
+          {
+            type: "docSidebar",
             sidebarId: "faqSidebar",
             position: "right",
             label: "FAQ",

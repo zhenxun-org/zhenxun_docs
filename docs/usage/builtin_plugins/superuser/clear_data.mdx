@@ -1,0 +1,38 @@
+---
+title: 清理数据(clear_data)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+清理已添加的临时文件夹中的数据
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 清理临时数据
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻清理临时数据" },
+    {
+      position: "left",
+      msg: `开始清理临时数据...`,
+    },
+    {
+      position: "left",
+      msg: `共清理了 83.85MB 的数据...`,
+    },
+  ]}
+/>

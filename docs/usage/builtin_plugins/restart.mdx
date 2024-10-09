@@ -1,0 +1,43 @@
+---
+title: 重启(restart)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+执行脚本重启真寻
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 重启
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻重启" },
+    {
+      position: "left",
+      msg: `确定是否重启小真寻？确定请回复[是|好|确定]（重启失败咱们将失去联系，请谨慎！）`,
+    },
+    { position: "right", msg: "是" },
+    {
+      position: "left",
+      msg: `开始重启真寻...`,
+    },
+    {
+      position: "left",
+      msg: `小真寻已成功重启！`,
+    },
+  ]}
+/>

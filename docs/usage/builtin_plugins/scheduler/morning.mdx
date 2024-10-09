@@ -1,0 +1,51 @@
+---
+title: 早晚安(morning)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+早晚安被动技能
+
+- 插件类型: `HIDDEN`
+- 响应规则: `None`
+- 插件等级: `None`
+- 被动模块: `morning_goodnight`
+
+### 配置项
+
+无
+
+### 指令
+
+无
+
+### 定时任务
+
+- `morning`
+
+  - 时间: 6:01
+  - 任务: 广播早安
+
+- `goodnight`
+  - 时间: 23:59
+  - 任务: 广播晚安
+
+### 示例
+
+<Messenger
+  msgs={[
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/scheduler/morning/0.jpg",
+      msg: "早上好",
+    },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/scheduler/morning/1.jpg",
+      msg: "小真寻要睡觉了，你们也要早点睡呀",
+    },
+  ]}
+/>

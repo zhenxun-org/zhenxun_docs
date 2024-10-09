@@ -1,0 +1,53 @@
+---
+title: 请求处理(request_manage)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+好友与邀请群组请求处理
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 查看请求 ?[-g] ?[-f]
+
+  - 说明: 查看当前所有请求，通过添加`-f`或`-g`参数来查看好友或群组请求
+
+- 清空请求 ?[-g] ?[-f]
+
+  - 说明: 清空当前所有请求，通过添加`-f`或`-g`参数来清空好友或群组请求
+
+- 同意/拒绝/忽略好友请求 [id]
+
+  - 说明: 同意/拒绝/忽略指定好友请求，id 为好友请求 id
+
+- 同意/拒绝/忽略群组请求 [id]
+  - 说明: 同意/拒绝/忽略指定群组请求，id 为群组请求 id
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "查看请求" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/superuser/request_manage/0.png",
+    },
+    { position: "right", msg: "忽略好友请求 28" },
+    {
+      position: "left",
+      msg: `成功处理请求!`,
+    },
+
+]}
+/>

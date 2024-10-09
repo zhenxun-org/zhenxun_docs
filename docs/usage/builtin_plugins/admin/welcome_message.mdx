@@ -1,0 +1,40 @@
+---
+title: 设置欢迎消息(welcome_message)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+设置群欢迎消息
+
+- 插件类型: `ADMIN`
+- 响应规则: `群组`
+- 插件等级: `1`
+
+### 配置项
+
+- `admin_bot_manage`
+  - `SET_GROUP_WELCOME_MESSAGE_LEVEL`
+    - 说明: 设置群欢迎消息所需要的管理员权限等级
+    - 类型: `int`
+    - 默认值: `2`
+
+### 指令
+
+- 设置欢迎消息 [msg] ?[-at]
+  - 说明: 当消息中包含 -at 时会 at 入群用户
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "设置欢迎消息 你好啊桀桀桀" },
+    {
+      position: "left",
+      msg: `设置欢迎消息成功: 
+你好啊桀桀桀`,
+    },
+  ]}
+/>

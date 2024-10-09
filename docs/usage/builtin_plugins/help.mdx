@@ -1,0 +1,59 @@
+---
+title: 帮助(help)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+查看真寻的帮助
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `help`:
+
+  - `TYPE`
+    - 说明: 帮助图片样式 ['normal', 'HTML', 'zhenxun']
+    - 类型: `str`
+    - 默认值: `zhenxun`
+
+### 指令
+
+- 帮助 ?[name/id]
+  - 说明: 查看真寻的帮助信息，指定 `name` 时查看该功能详细帮助
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/help/0.png",
+      msg: "zhenxun版本",
+    },
+    { position: "right", msg: "真寻帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/help/1.png",
+      msg: "html版本",
+    },
+    { position: "right", msg: "真寻帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/help/2.png",
+      msg: "normal版本",
+    },
+    { position: "right", msg: "真寻帮助 签到" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/help/3.png",
+      msg: "功能详细帮助",
+    },
+  ]}
+/>

@@ -1,0 +1,45 @@
+---
+title: 超级用户帮助(super_help)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+获取当前的超级用户帮助图片。
+
+- 插件类型: `SUPERUSER`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `super_help`
+  - `TYPE`:
+    - 说明: 超级用户帮助样式，normal, zhenxun
+    - 默认值: `zhenxun`
+
+### 指令
+
+- 超级用户帮助
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻超级用户帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/superuser/super_help/0.png",
+      msg: `zhenxun版本`,
+    },
+    { position: "right", msg: "真寻超级用户帮助" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/superuser/super_help/1.png",
+      msg: `normal版本`,
+    },
+
+]}
+/>

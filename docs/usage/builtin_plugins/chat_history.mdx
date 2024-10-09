@@ -1,0 +1,40 @@
+---
+title: 消息统计(statistics_handle)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+消息统计查询
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 消息统计 ?[--des]
+
+  - 说明: 查询当前消息统计信息，含有 des 参数时为逆序
+
+- 日/周/月消息统计 ?[num]
+
+  - 说明: 查看不同时间范围的消息统计次数，`num`为显示人数条数，默认为 10
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "消息统计" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/chat_history/0.png",
+    },
+  ]}
+/>
