@@ -44,10 +44,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px);
+  filter: blur(6px);
   z-index: 1;
   max-height: 500px;
   min-height: 300px;
+  overflow: auto;
 }
 
 .qq-chat-content {
@@ -64,7 +65,9 @@
   overflow: auto;
   z-index: 2;
   position: relative; */
-  
+  max-height: 500px;
+  min-height: 300px;
+  overflow: auto;
   position: relative;
   z-index: 2;
   color: white;
