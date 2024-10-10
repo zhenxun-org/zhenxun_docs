@@ -14,16 +14,12 @@ subSidebar: false
 
 ### 配置项
 
-- admin_bot_manage
-    - ADMIN_DEFAULT_AUTH
-      - 说明: 设置群组管理员默认权限等级
-      - 类型: `int`
-      - 默认值: `5`
+- `admin_bot_manage`
+  - `ADMIN_DEFAULT_AUTH`
+    - 说明: 设置群组管理员默认权限等级
+    - 类型: `int`
+    - 默认值: `5`
 
 ### 指令
 
 无
-
-
-
-
