@@ -27,6 +27,24 @@ WebUI安装
 
 ::::
 
+### 配置账号密码
+
+在`data/config.yaml`文件中配置项设置账号密码
+
+```yaml
+web-ui:
+  # web-ui
+  # USERNAME: 前端管理用户名
+  # PASSWORD: 前端管理密码
+  USERNAME: admin
+  PASSWORD: 
+```
+
+:::warning
+必须要设置账号密码，否则无法登陆！
+:::
+
+
 手动安装
 ---
 
@@ -50,21 +68,4 @@ WebUI安装
 
 到此处已安装完成，再次启动不会出现WebUI相关报错的日志🎉🎉
 
-:::
-
-### 4.配置账号密码
-
-在`data/config.yaml`文件中配置项设置账号密码
-
-```yaml
-web-ui:
-  # web-ui
-  # USERNAME: 前端管理用户名
-  # PASSWORD: 前端管理密码
-  USERNAME: admin
-  PASSWORD: 
-```
-
-:::warning
-必须要设置账号密码，否则无法登陆！
 :::

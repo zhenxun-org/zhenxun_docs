@@ -27,6 +27,15 @@ __简介__
 
 此项目用爱发电，个人学习的实践项目，也算比较有趣，希望有个机器人老婆（迫真，希望给一个star（球球
 
+## 想要体验？
+
+```
+Url： test.zhenxun.org:8080/onebot/v11/ws
+AccessToken: PUBLIC_ZHENXUN_TEST
+
+注：你无法获得超级用户权限
+```
+
 ## 使用以OneBot协议为准的框架
 
 符合Onebot标准，在 [这里](./install/qq.md) 可以获取相关情报  

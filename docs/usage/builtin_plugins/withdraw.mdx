@@ -1,0 +1,32 @@
+---
+title: 消息撤回(withdraw)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+消息撤回，除超级用户外，用户只可以撤回自己触发的真寻回复
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 撤回
+
+### 示例
+
+<Messenger 
+  msgs={[
+    { position: 'right', msg: 'test' },
+    { position: 'left', msg: `这是一个测试回复` }
+    { position: 'right', msg: '(假装引用上一条消息) 撤回' },
+  ]}
+/>
