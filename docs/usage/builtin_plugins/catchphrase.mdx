@@ -1,0 +1,35 @@
+---
+title: 可爱口癖(catchphrase)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+自定义的小真寻可爱口癖
+
+- 插件类型: `HIDDEN`
+- 响应规则: `NONE`
+- 插件等级: `NONE`
+
+### 配置项
+
+- `catchphrase`
+  - `CATCHPHRASE`:
+    - 说明: 小真寻的口癖，在文本末尾添加指定文字~
+    - 类型: `str`
+    - 默认值: ``
+
+### 指令
+
+无
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "嗨，小真寻" },
+    { position: "left", msg: `嗯嗯，你好，牡蛎!` },
+  ]}
+/>
