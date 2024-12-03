@@ -721,7 +721,7 @@ DB_URL = "sqlite:data/db/zhenxun.db"
 <details>
   <summary>点击查看</summary>
 
-![_](/img/install_xiaobai/vi_config.gif)
+![_](/img/install/install_xiaobai/vi_config.gif)
 
 </details>
 
