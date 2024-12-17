@@ -46,6 +46,7 @@ const sidebars = {
       ],
     },
   ],
+  devSidebar: ["development/config"],
   usageSidebar: [
     {
       type: "category",

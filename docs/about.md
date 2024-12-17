@@ -4,8 +4,7 @@ subSidebar: false
 ---
 
 
-嗨嗨，这里是可爱的小真寻
-===
+## 嗨嗨，这里是可爱的小真寻
 
 :::tip 桀桀桀
 __欧尼酱被妹妹下药了！摇身一变成了白发傲娇美少女！__
@@ -67,13 +66,15 @@ Linux，可以使用 __Ubuntu__ 等，Windows也可以获得很好的支持
 * 提交issues
 * 加入「[是真寻酱哒](https://jq.qq.com/?_wv=1027&k=u8PgBkMZ)]或「[真寻酱的技术群](https://qm.qq.com/q/YYYt5rkMYc)」
 
-__开源协议__
-===
+## __开源协议__
 
 本项目使用 [AGPL-3.0 License](https://github.com/HibiKier/zhenxun_bot/blob/main/LICENSE) 作为开源协议。
 
-<!-- __致谢__
-===
+## __特别感谢__
+
+首席设计师：[酥酥/coldly-ss](https://github.com/coldly-ss)
+
+## __致谢__
 
 __项目致谢__
 ---
@@ -91,7 +92,7 @@ __以下项目为真寻提供了不少的帮助和灵感__
 [NothAmor / nonebot2_luxun_says](https://github.com/NothAmor/nonebot2_luxun_says)：基于nonebot2机器人框架的鲁迅说插件  
 [Kyomotoi / AnimeThesaurus](https://github.com/Kyomotoi/AnimeThesaurus)：一个~~特二刺螈~~（文爱）的适用于任何bot的词库  
 [Ailitonia / omega-miya](https://github.com/Ailitonia/omega-miya)：基于nonebot2的qq机器人  
-[KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件 -->
+[KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件
 
 <!-- __发电致谢__
 ---
