@@ -18,17 +18,37 @@ sudo apt install postgresql postgresql-contrib
 
 1. 创建数据库和用户（依次输入）
 
+* 切换用户
+
 ```bash
-sudo su - postgres  # 切换用户
+sudo su - postgres
+```
+
+* 进入psql
+
+```bash
 psql
+```
+
+* 创建用户（此步骤可跳过）
+
+```bash
         #  用户名↓                # 密码↓
-# CREATE USER uname WITH PASSWORD 'zhenxun';      # 创建用户（可不执行）
+CREATE USER uname WITH PASSWORD 'zhenxun';
+```
 
+* 更改密码
+
+```bash
                                   # 密码↓
-alter user postgres with password 'zhenxun_bot';    # 修改postgres的密码
+alter user postgres with password 'zhenxun_bot'; 
+```
 
+* 创建数据库
+
+```bash
         # 数据库名称↓    所有者(用户名)↓
-CREATE DATABASE zhenxun_bot OWNER postgres;             # 创建数据库
+CREATE DATABASE zhenxun_bot OWNER postgres;            
 ```
 
 :::tip

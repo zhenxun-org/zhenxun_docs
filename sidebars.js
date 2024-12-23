@@ -46,7 +46,12 @@ const sidebars = {
       ],
     },
   ],
-  devSidebar: ["development/config"],
+  devSidebar: [
+    "development/base_data",
+    "development/config",
+    "development/shop",
+    "development/message",
+  ],
   usageSidebar: [
     {
       type: "category",
