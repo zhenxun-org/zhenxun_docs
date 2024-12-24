@@ -33,7 +33,7 @@ msg_list = ['123', '123', img]
 # 转为alc消息
 alc_msg = MessageUtils.build_message(msg_list)
 # 发送转发消息，头像为qq是`123123123`的头像，名称为小真寻
-await MessageUtils.alc_forward_msg(alc_msg, '123123123', '小真寻')
+await MessageUtils.alc_forward_msg(alc_msg, '123123123', '小真寻').send()
 ```
 
 ## 主动消息发送
