@@ -3,8 +3,9 @@ title: 基础数据
 subSidebar: false
 ---
 
+## 基础数据
 
-## 好感度
+### 好感度
 
 ```python
 from zhenxun.models.sign_user import SignUser
@@ -26,7 +27,7 @@ sign_user.impression = sign_user.impression + 100
 await sign_user.save()
 ```
 
-## 金币/道具
+### 金币/道具
 
 ```python
 from zhenxun.models.user_console import UserConsole
@@ -148,4 +149,42 @@ async def use_props_by_name(
     ...
 # 例如，用户12345678使用1个道具
 await UserConsole.use_props_by_name(12345678, '测试道具A', 1)
+```
+## 好友/群组列表
+
+### 好友列表
+
+```python
+from zhenxun.utils.platform import PlatformUtils
+
+# 获取好友列表，平台
+friend_list, platform = await PlatformUtils.get_friend_list(bot)
+```
+
+### 群组列表
+
+```python
+from zhenxun.utils.platform import PlatformUtils
+
+# 获取群组列表，平台
+group_list, platform = await PlatformUtils.get_group_list(bot)
+```
+
+## 其他
+
+### 获取平台
+
+```python
+from nonebot import on_command, Bot
+from nonebot_plugin_uninfo import Uninfo
+from zhenxun.utils.platform import get_platform
+
+_matcher = on_command("test")
+
+@_matcher.handle()
+async def _(bot: Bot, session: Uninfo):
+    # 获取平台，使用Bot
+    platform = await PlatformUtils.get_platform(bot)
+    # 获取平台，使用Uninfo
+    platform = await PlatformUtils.get_platform(session)
 ```

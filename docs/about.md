@@ -92,7 +92,10 @@ __以下项目为真寻提供了不少的帮助和灵感__
 [NothAmor / nonebot2_luxun_says](https://github.com/NothAmor/nonebot2_luxun_says)：基于nonebot2机器人框架的鲁迅说插件  
 [Kyomotoi / AnimeThesaurus](https://github.com/Kyomotoi/AnimeThesaurus)：一个~~特二刺螈~~（文爱）的适用于任何bot的词库  
 [Ailitonia / omega-miya](https://github.com/Ailitonia/omega-miya)：基于nonebot2的qq机器人  
-[KimigaiiWuyi / GenshinUID]("https://github.com/KimigaiiWuyi/GenshinUID")：一个基于HoshinoBot/NoneBot2的原神UID查询插件
+[KimigaiiWuyi / GenshinUID](https://github.com/KimigaiiWuyi/GenshinUID)：一个基于HoshinoBot/NoneBot2的原神UID查询插件  
+[NapNeko / NapCatQQ](https://github.com/NapNeko/NapCatQQ)：NapCatQQ 是现代化的基于 NTQQ 的 Bot 协议端实现  
+[RF-Tar-Railt / nonebot-plugin-uninfo](https://github.com/RF-Tar-Railt/nonebot-plugin-uninfo)：Nonebot2 多平台的会话信息(用户、群组、频道)获取插件  
+[kexue-z / nonebot-plugin-htmlrender](https://github.com/kexue-z/nonebot-plugin-htmlrender)：html截图插件
 
 <!-- __发电致谢__
 ---

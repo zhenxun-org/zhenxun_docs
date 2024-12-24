@@ -51,6 +51,7 @@ const sidebars = {
     "development/config",
     "development/shop",
     "development/message",
+    "development/withdraw",
   ],
   usageSidebar: [
     {
