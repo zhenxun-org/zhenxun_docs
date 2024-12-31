@@ -1,5 +1,5 @@
 ---
-title: 安装可爱的小真寻
+title: 安装小真寻(手动)
 subSidebar: false
 id: install-zhenxun
 ---
@@ -7,15 +7,11 @@ id: install-zhenxun
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-::::warning 版本警告
+:::warning 版本警告
 
-真寻Bot需要python版本为 **3.10或3.11**
+真寻Bot需要python版本为 **>=3.10**
 
-:::info Tip
-**Python3.9** 同样也可以使用，但是需要将pyproject.toml中的版本改为3.9
 :::
-
-::::
 
 下载
 ---

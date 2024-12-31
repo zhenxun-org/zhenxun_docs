@@ -36,7 +36,14 @@ const sidebars = {
       ],
     },
     "install/install-qq",
-    "install/install-zhenxun",
+    {
+      type: "category",
+      label: "安装小真寻(二选一)",
+      items: [
+        "install/zhenxun/nb-install-zhenxun",
+        "install/zhenxun/install-zhenxun",
+      ],
+    },
     {
       type: "category",
       label: "安装WebUI(二选一)",
