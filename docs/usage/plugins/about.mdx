@@ -1,0 +1,44 @@
+---
+title: Roll(roll)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+让小真寻帮你作出选择吧！  
+跟随参数数随机选择其中一个参数，未跟随参数时随机一百内数字。
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+无
+
+### 指令
+
+- 关于
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "roll" },
+    {
+      position: "left",
+      msg: `roll: 10`,
+    },
+    { position: "right", msg: "roll 吃饭 睡觉 打游戏" },
+    {
+      position: "left",
+      msg: `嗯哼，在此刻转动吧！命运！`,
+    },
+    {
+      position: "left",
+      msg: `让小真寻看看是什么结果！答案是：‘吃饭’`,
+    },
+  ]}
+/>
