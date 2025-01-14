@@ -1,16 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css'; // 引入样式
 import  Menu  from '../../../static/icon/menu.svg';
 import  Back  from '../../../static/icon/back.svg';
 
 type Message = {
-  position: 'left' | 'right';
+  position: 'left' | 'mid' | 'right';
   msg?: string;
   imgSrc?: string;
 };
 
 type MessengerProps = {
   msgs: Message[];
+};
+
+const TextParser = ({ initialText }) => {
+  const [parsedText, setParsedText] = useState('');
+
+  useEffect(() => {
+    const parse = (text) => {
+      return text.replace(/#\(([^)]+)\)([^#]+)/g, (match, color, textPart) => {
+        const span = document.createElement("span");
+
+        span.style.color = "#" + color;
+        span.title = color.toLowerCase();
+        span.textContent = textPart;
+        return span.outerHTML;
+      }).replace(/\$\(([^)]+)\)/g, (match, imagePath) => {
+        const img = document.createElement("img");
+        img.src = imagePath;
+        img.style.display = 'inline-block';
+        return img.outerHTML;
+      });
+    };
+
+    const parsed = `<div>${parse(initialText)}</div>`;
+    setParsedText(parsed);
+  }, [initialText]);
+
+  return (
+    <div id="text-container" dangerouslySetInnerHTML={{ __html: parsedText }} />
+  );
 };
 
 const Messenger: React.FC<MessengerProps> = ({ msgs }) => {
@@ -32,7 +61,11 @@ const Messenger: React.FC<MessengerProps> = ({ msgs }) => {
                       <img src={`/zhenxun_bot/${message.imgSrc}`} alt="图片" className="qq-image" />
                     )}
                     {message.msg && (
-                      <div>{message.msg}</div>
+                      message.position === 'mid' ? (
+                        <div className="qq-text-center"><TextParser initialText={message.msg}/></div>
+                      ) : (
+                        <div>{message.msg}</div>
+                      )
                     )}
                   </div>
                   {message.position === 'right' && <div className="qq-avatar qq-avatar-hua"></div>}

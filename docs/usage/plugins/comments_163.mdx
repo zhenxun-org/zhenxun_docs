@@ -1,0 +1,41 @@
+---
+title: 网易云热评(comments_163)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+通过配置ALAPI，让小真寻帮你emo吧
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 网易云热评 | 到点了 | 12点了
+  - 说明: 随机发送点评消息
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "网易云热评" },
+    {
+      position: "left",
+      msg: `你最近还好吗？我已无从知晓 希望你一切都好。[可爱] “你说喜欢就是放肆，但爱就是克制 后来我才知道错过就是遗憾 ”\n\t——《最近 (正式版)》`,
+    },
+    { position: "right", msg: "到点了" },
+    {
+      position: "left",
+      msg: `我终于忘记你啦\n\t——《过客》`,
+    },
+    { position: "right", msg: "12点了" },
+    {
+      position: "left",
+      msg: `我想能找到你 我想能见你 我想能找到你 我想我还能见你\n\t——《我要找到你》`,
+    },
+  ]}
+/>
