@@ -54,7 +54,7 @@ EOF
 
 ```shell
 zhenxun@zhenxun:~$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-[sudo] zhenxun 的密码： 
+[sudo] zhenxun 的密码：
 zhenxun@zhenxun:~$ sudo tee /etc/apt/sources.list > /dev/null << EOF
 > deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
 > deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
@@ -90,12 +90,12 @@ zhenxun@zhenxun:~$ sudo apt update
 获取:13 http://mirrors.aliyun.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
 获取:14 http://mirrors.aliyun.com/ubuntu focal/restricted Translation-en [6,212 B]
 获取:15 http://mirrors.aliyun.com/ubuntu focal/restricted Translation-zh_CN [1,324 B]
-获取:16 http://mirrors.aliyun.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]                      
-获取:17 http://mirrors.aliyun.com/ubuntu focal/universe amd64 Packages [8,628 kB]                                                      
-命中:18 http://security.ubuntu.com/ubuntu noble-security InRelease                                                                  
-获取:19 http://mirrors.aliyun.com/ubuntu focal/universe Translation-zh_CN [388 kB]                                
-获取:20 http://mirrors.aliyun.com/ubuntu focal/universe Translation-en [5,124 kB]     
-命中:21 https://ppa.launchpadcontent.net/oibaf/graphics-drivers/ubuntu noble InRelease 
+获取:16 http://mirrors.aliyun.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+获取:17 http://mirrors.aliyun.com/ubuntu focal/universe amd64 Packages [8,628 kB]
+命中:18 http://security.ubuntu.com/ubuntu noble-security InRelease
+获取:19 http://mirrors.aliyun.com/ubuntu focal/universe Translation-zh_CN [388 kB]
+获取:20 http://mirrors.aliyun.com/ubuntu focal/universe Translation-en [5,124 kB]
+命中:21 https://ppa.launchpadcontent.net/oibaf/graphics-drivers/ubuntu noble InRelease
 获取:22 http://mirrors.aliyun.com/ubuntu focal/universe amd64 Components [3,603 kB]
 获取:23 http://mirrors.aliyun.com/ubuntu focal/universe Icons (48x48) [3,016 kB]
 获取:24 http://mirrors.aliyun.com/ubuntu focal/universe Icons (64x64) [7,794 kB]
@@ -106,16 +106,16 @@ zhenxun@zhenxun:~$ sudo apt update
 获取:29 http://mirrors.aliyun.com/ubuntu focal/multiverse Translation-zh_CN [4,612 B]
 获取:30 http://mirrors.aliyun.com/ubuntu focal/multiverse amd64 Components [48.4 kB]
 获取:31 http://mirrors.aliyun.com/ubuntu focal/multiverse Icons (48x48) [23.1 kB]
-获取:32 http://mirrors.aliyun.com/ubuntu focal/multiverse Icons (64x64) [192 kB]          
-获取:33 http://mirrors.aliyun.com/ubuntu focal/multiverse Icons (64x64@2) [214 B]                   
+获取:32 http://mirrors.aliyun.com/ubuntu focal/multiverse Icons (64x64) [192 kB]
+获取:33 http://mirrors.aliyun.com/ubuntu focal/multiverse Icons (64x64@2) [214 B]
 获取:34 http://mirrors.aliyun.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9,136 B]
-获取:35 http://mirrors.aliyun.com/ubuntu focal-updates/main amd64 Packages [3,680 kB]                  
+获取:35 http://mirrors.aliyun.com/ubuntu focal-updates/main amd64 Packages [3,680 kB]
 获取:37 http://mirrors.aliyun.com/ubuntu focal-updates/main Translation-en [564 kB]
 获取:38 http://mirrors.aliyun.com/ubuntu focal-updates/main amd64 Components [276 kB]
-获取:39 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (48x48) [63.9 kB]  
-获取:40 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (64x64) [102 kB]                                                     
-命中:36 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease                                                             
-获取:41 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (64x64@2) [29 B]       
+获取:39 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (48x48) [63.9 kB]
+获取:40 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (64x64) [102 kB]
+命中:36 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble InRelease
+获取:41 http://mirrors.aliyun.com/ubuntu focal-updates/main Icons (64x64@2) [29 B]
 获取:42 http://mirrors.aliyun.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.8 kB]
 获取:43 http://mirrors.aliyun.com/ubuntu focal-updates/restricted amd64 Packages [3,379 kB]
 获取:44 http://mirrors.aliyun.com/ubuntu focal-updates/restricted Translation-en [473 kB]
@@ -124,78 +124,78 @@ zhenxun@zhenxun:~$ sudo apt update
 获取:47 http://mirrors.aliyun.com/ubuntu focal-updates/restricted Icons (64x64) [29 B]
 获取:48 http://mirrors.aliyun.com/ubuntu focal-updates/restricted Icons (64x64@2) [29 B]
 获取:49 http://mirrors.aliyun.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [548 B]
-获取:50 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 Packages [1,238 kB]                                              
-获取:51 http://mirrors.aliyun.com/ubuntu focal-updates/universe Translation-en [297 kB]                                                
-获取:52 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 Components [445 kB]                                              
-获取:54 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (48x48) [297 kB]                                                 
-命中:53 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease                                                             
-获取:55 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (64x64) [520 kB]                                                 
-命中:56 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease                                                           
-获取:57 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (64x64@2) [29 B]                                                 
-获取:58 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [28.3 kB]                                         
-获取:59 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 Packages [27.0 kB]                                             
-获取:60 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Translation-en [7,936 B]                                             
-获取:61 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 Components [940 B]                                             
-获取:62 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (48x48) [1,867 B]                                              
-获取:63 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (64x64) [2,497 B]                                              
-获取:64 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (64x64@2) [29 B]                                               
-获取:65 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [612 B]                                         
-获取:66 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]                                                 
-获取:67 http://mirrors.aliyun.com/ubuntu focal-backports/main Translation-en [16.3 kB]                                                 
-获取:68 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 Components [7,980 B]                                               
-获取:69 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (48x48) [7,156 B]                                                  
-获取:70 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (64x64) [10.7 kB]                                                  
-获取:71 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (64x64@2) [29 B]                                                   
-获取:72 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1,420 B]                                           
-获取:73 http://mirrors.aliyun.com/ubuntu focal-backports/restricted amd64 Components [216 B]                                           
-获取:74 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (48x48) [29 B]                                               
-获取:75 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (64x64) [29 B]                                               
-获取:76 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (64x64@2) [29 B]                                             
-获取:77 http://mirrors.aliyun.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]                                       
-获取:78 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]                                             
-获取:79 http://mirrors.aliyun.com/ubuntu focal-backports/universe Translation-en [16.3 kB]                                             
-获取:80 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 Components [30.5 kB]                                           
-获取:81 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (48x48) [13.3 kB]                                              
-获取:82 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (64x64) [22.7 kB]                                              
-获取:83 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (64x64@2) [29 B]                                               
-获取:84 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]                                         
-获取:85 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse amd64 Components [212 B]                                           
-获取:86 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (48x48) [29 B]                                               
-获取:87 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (64x64) [29 B]                                               
-获取:88 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (64x64@2) [29 B]                                             
-获取:89 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]                                       
-获取:90 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 Packages [3,304 kB]                                                 
-获取:91 http://mirrors.aliyun.com/ubuntu focal-security/main Translation-en [484 kB]                                                   
-获取:92 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 Components [65.4 kB]                                                
-获取:93 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (48x48) [24.2 kB]                                                   
-获取:94 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (64x64) [42.9 kB]                                                   
-获取:95 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (64x64@2) [29 B]                                                    
-获取:96 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.3 kB]                                            
-获取:97 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 Packages [3,247 kB]                                           
-获取:98 http://mirrors.aliyun.com/ubuntu focal-security/restricted Translation-en [456 kB]                                             
-获取:99 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 Components [212 B]                                            
-获取:100 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (48x48) [29 B]                                               
-获取:101 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (64x64) [29 B]                                               
-获取:102 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (64x64@2) [29 B]                                             
-获取:103 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [548 B]                                       
-获取:104 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 Packages [1,016 kB]                                            
-获取:105 http://mirrors.aliyun.com/ubuntu focal-security/universe Translation-en [215 kB]                                              
-获取:106 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 Components [160 kB]                                            
-获取:107 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (48x48) [95.4 kB]                                              
-获取:108 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (64x64) [166 kB]                                               
-获取:109 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (64x64@2) [29 B]                                               
-获取:110 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.4 kB]                                       
-获取:111 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]                                           
-获取:112 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Translation-en [5,968 B]                                           
-获取:113 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 Components [940 B]                                           
-获取:114 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (48x48) [1,867 B]                                            
-获取:115 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (64x64) [2,497 B]                                            
-获取:116 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (64x64@2) [29 B]                                             
-获取:117 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]                                       
-已下载 53.4 MB，耗时 10秒 (5,199 kB/s)                                                                                                 
+获取:50 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 Packages [1,238 kB]
+获取:51 http://mirrors.aliyun.com/ubuntu focal-updates/universe Translation-en [297 kB]
+获取:52 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 Components [445 kB]
+获取:54 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (48x48) [297 kB]
+命中:53 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates InRelease
+获取:55 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (64x64) [520 kB]
+命中:56 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-backports InRelease
+获取:57 http://mirrors.aliyun.com/ubuntu focal-updates/universe Icons (64x64@2) [29 B]
+获取:58 http://mirrors.aliyun.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [28.3 kB]
+获取:59 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 Packages [27.0 kB]
+获取:60 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Translation-en [7,936 B]
+获取:61 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 Components [940 B]
+获取:62 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (48x48) [1,867 B]
+获取:63 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (64x64) [2,497 B]
+获取:64 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse Icons (64x64@2) [29 B]
+获取:65 http://mirrors.aliyun.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [612 B]
+获取:66 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+获取:67 http://mirrors.aliyun.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+获取:68 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 Components [7,980 B]
+获取:69 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (48x48) [7,156 B]
+获取:70 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (64x64) [10.7 kB]
+获取:71 http://mirrors.aliyun.com/ubuntu focal-backports/main Icons (64x64@2) [29 B]
+获取:72 http://mirrors.aliyun.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1,420 B]
+获取:73 http://mirrors.aliyun.com/ubuntu focal-backports/restricted amd64 Components [216 B]
+获取:74 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (48x48) [29 B]
+获取:75 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (64x64) [29 B]
+获取:76 http://mirrors.aliyun.com/ubuntu focal-backports/restricted Icons (64x64@2) [29 B]
+获取:77 http://mirrors.aliyun.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+获取:78 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+获取:79 http://mirrors.aliyun.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+获取:80 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 Components [30.5 kB]
+获取:81 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (48x48) [13.3 kB]
+获取:82 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (64x64) [22.7 kB]
+获取:83 http://mirrors.aliyun.com/ubuntu focal-backports/universe Icons (64x64@2) [29 B]
+获取:84 http://mirrors.aliyun.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+获取:85 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse amd64 Components [212 B]
+获取:86 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (48x48) [29 B]
+获取:87 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (64x64) [29 B]
+获取:88 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse Icons (64x64@2) [29 B]
+获取:89 http://mirrors.aliyun.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+获取:90 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 Packages [3,304 kB]
+获取:91 http://mirrors.aliyun.com/ubuntu focal-security/main Translation-en [484 kB]
+获取:92 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 Components [65.4 kB]
+获取:93 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (48x48) [24.2 kB]
+获取:94 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (64x64) [42.9 kB]
+获取:95 http://mirrors.aliyun.com/ubuntu focal-security/main Icons (64x64@2) [29 B]
+获取:96 http://mirrors.aliyun.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.3 kB]
+获取:97 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 Packages [3,247 kB]
+获取:98 http://mirrors.aliyun.com/ubuntu focal-security/restricted Translation-en [456 kB]
+获取:99 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 Components [212 B]
+获取:100 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (48x48) [29 B]
+获取:101 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (64x64) [29 B]
+获取:102 http://mirrors.aliyun.com/ubuntu focal-security/restricted Icons (64x64@2) [29 B]
+获取:103 http://mirrors.aliyun.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [548 B]
+获取:104 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 Packages [1,016 kB]
+获取:105 http://mirrors.aliyun.com/ubuntu focal-security/universe Translation-en [215 kB]
+获取:106 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 Components [160 kB]
+获取:107 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (48x48) [95.4 kB]
+获取:108 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (64x64) [166 kB]
+获取:109 http://mirrors.aliyun.com/ubuntu focal-security/universe Icons (64x64@2) [29 B]
+获取:110 http://mirrors.aliyun.com/ubuntu focal-security/universe amd64 c-n-f Metadata [21.4 kB]
+获取:111 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 Packages [24.8 kB]
+获取:112 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Translation-en [5,968 B]
+获取:113 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 Components [940 B]
+获取:114 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (48x48) [1,867 B]
+获取:115 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (64x64) [2,497 B]
+获取:116 http://mirrors.aliyun.com/ubuntu focal-security/multiverse Icons (64x64@2) [29 B]
+获取:117 http://mirrors.aliyun.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+已下载 53.4 MB，耗时 10秒 (5,199 kB/s)
 正在读取软件包列表... 完成
 正在分析软件包的依赖关系树... 完成
-正在读取状态信息... 完成                 
+正在读取状态信息... 完成
 有 3 个软件包可以升级。请执行 ‘apt list --upgradable’ 来查看它们
 ```
 
@@ -220,7 +220,7 @@ zhenxun@zhenxun:~$ sudo apt update
 zhenxun@zhenxun:~$ sudo apt install git
 正在读取软件包列表... 完成
 正在分析软件包的依赖关系树... 完成
-正在读取状态信息... 完成                 
+正在读取状态信息... 完成
 将会同时安装下列软件：
   git-man liberror-perl
 建议安装：
@@ -234,35 +234,35 @@ zhenxun@zhenxun:~$ sudo apt install git
 获取:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25.6 kB]
 获取:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.1 [1,100 kB]
 获取:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.1 [3,679 kB]
-已下载 4,804 kB，耗时 7秒 (700 kB/s)                                                                                                   
+已下载 4,804 kB，耗时 7秒 (700 kB/s)
 正在选中未选择的软件包 liberror-perl。
 (正在读取数据库 ... 系统当前共安装有 153464 个文件和目录。)
 准备解压 .../liberror-perl_0.17029-2_all.deb  ...
 
-进度：[  0%] [......................................................................................................................] 
-正在解压 liberror-perl (0.17029-2) .................................................................................................] 
+进度：[  0%] [......................................................................................................................]
+正在解压 liberror-perl (0.17029-2) .................................................................................................]
 
-正在选中未选择的软件包 git-man。....................................................................................................] 
+正在选中未选择的软件包 git-man。....................................................................................................]
 准备解压 .../git-man_1%3a2.43.0-1ubuntu7.1_all.deb  ...
 
-正在解压 git-man (1:2.43.0-1ubuntu7.1) .............................................................................................] 
+正在解压 git-man (1:2.43.0-1ubuntu7.1) .............................................................................................]
 
-正在选中未选择的软件包 git。######################..................................................................................] 
+正在选中未选择的软件包 git。######################..................................................................................]
 准备解压 .../git_1%3a2.43.0-1ubuntu7.1_amd64.deb  ...
 
-正在解压 git (1:2.43.0-1ubuntu7.1) ...#####################.........................................................................] 
+正在解压 git (1:2.43.0-1ubuntu7.1) ...#####################.........................................................................]
 
-正在设置 liberror-perl (0.17029-2) ...##############################................................................................] 
+正在设置 liberror-perl (0.17029-2) ...##############################................................................................]
 
-进度：[ 54%] [###############################################################.......................................................] 
-正在设置 git-man (1:2.43.0-1ubuntu7.1) ...############################################..............................................] 
+进度：[ 54%] [###############################################################.......................................................]
+正在设置 git-man (1:2.43.0-1ubuntu7.1) ...############################################..............................................]
 
-进度：[ 69%] [#################################################################################.....................................] 
-正在设置 git (1:2.43.0-1ubuntu7.1) ...##################################################################............................] 
+进度：[ 69%] [#################################################################################.....................................]
+正在设置 git (1:2.43.0-1ubuntu7.1) ...##################################################################............................]
 
-进度：[ 85%] [###################################################################################################...................] 
-正在处理用于 man-db (2.12.0-4build2) 的触发器 ...#########################################################################..........] 
-zhenxun@zhenxun:~$ 
+进度：[ 85%] [###################################################################################################...................]
+正在处理用于 man-db (2.12.0-4build2) 的触发器 ...#########################################################################..........]
+zhenxun@zhenxun:~$
 ```
 
 </details>
@@ -282,7 +282,7 @@ zhenxun@zhenxun:~$
 zhenxun@zhenxun:~$ sudo apt install python3-pip
 正在读取软件包列表... 完成
 正在分析软件包的依赖关系树... 完成
-正在读取状态信息... 完成                 
+正在读取状态信息... 完成
 将会同时安装下列软件：
   binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2 dpkg-dev fakeroot g++ g++-13 g++-13-x86-64-linux-gnu
   g++-x86-64-linux-gnu gcc gcc-13 gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu javascript-common libalgorithm-diff-perl
@@ -312,58 +312,58 @@ zhenxun@zhenxun:~$ sudo apt install python3-pip
 获取:5 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.3 [94.5 kB]
 获取:6 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.3 [849 kB]
 获取:7 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.3 [2,463 kB]
-********************************************************************           
-获取:49 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 python3-setuptools all 68.1.2-2ubuntu1.1 [396 kB]          
-获取:50 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble/universe amd64 python3-wheel all 0.42.0-2 [53.1 kB]                           
-获取:51 http://cn.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip all 24.0+dfsg-1ubuntu1.1 [1,317 kB]               
-已下载 65.9 MB，耗时 32秒 (2,064 kB/s)                                                                                                 
+********************************************************************
+获取:49 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble-updates/main amd64 python3-setuptools all 68.1.2-2ubuntu1.1 [396 kB]
+获取:50 http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble/universe amd64 python3-wheel all 0.42.0-2 [53.1 kB]
+获取:51 http://cn.archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip all 24.0+dfsg-1ubuntu1.1 [1,317 kB]
+已下载 65.9 MB，耗时 32秒 (2,064 kB/s)
 正在从软件包中解出模板：100%
 正在选中未选择的软件包 binutils-common:amd64。
 (正在读取数据库 ... 系统当前共安装有 154548 个文件和目录。)
 准备解压 .../00-binutils-common_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 binutils-common:amd64 (2.42-4ubuntu2.3) ...................................................................................] 
+正在解压 binutils-common:amd64 (2.42-4ubuntu2.3) ...................................................................................]
 正在选中未选择的软件包 libsframe1:amd64。
 准备解压 .../01-libsframe1_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 libsframe1:amd64 (2.42-4ubuntu2.3) ........................................................................................] 
+正在解压 libsframe1:amd64 (2.42-4ubuntu2.3) ........................................................................................]
 正在选中未选择的软件包 libbinutils:amd64。
 准备解压 .../02-libbinutils_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 libbinutils:amd64 (2.42-4ubuntu2.3) .......................................................................................] 
+正在解压 libbinutils:amd64 (2.42-4ubuntu2.3) .......................................................................................]
 正在选中未选择的软件包 libctf-nobfd0:amd64。
 准备解压 .../03-libctf-nobfd0_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 libctf-nobfd0:amd64 (2.42-4ubuntu2.3) .....................................................................................] 
+正在解压 libctf-nobfd0:amd64 (2.42-4ubuntu2.3) .....................................................................................]
 正在选中未选择的软件包 libctf0:amd64。
 准备解压 .../04-libctf0_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 libctf0:amd64 (2.42-4ubuntu2.3) ...........................................................................................] 
+正在解压 libctf0:amd64 (2.42-4ubuntu2.3) ...........................................................................................]
 正在选中未选择的软件包 libgprofng0:amd64。
 准备解压 .../05-libgprofng0_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 libgprofng0:amd64 (2.42-4ubuntu2.3) .......................................................................................] 
+正在解压 libgprofng0:amd64 (2.42-4ubuntu2.3) .......................................................................................]
 正在选中未选择的软件包 binutils-x86-64-linux-gnu。
 准备解压 .../06-binutils-x86-64-linux-gnu_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 binutils-x86-64-linux-gnu (2.42-4ubuntu2.3) ...............................................................................] 
+正在解压 binutils-x86-64-linux-gnu (2.42-4ubuntu2.3) ...............................................................................]
 正在选中未选择的软件包 binutils。
 准备解压 .../07-binutils_2.42-4ubuntu2.3_amd64.deb  ...
 
-正在解压 binutils (2.42-4ubuntu2.3) ................................................................................................] 
+正在解压 binutils (2.42-4ubuntu2.3) ................................................................................................]
 正在选中未选择的软件包 libcc1-0:amd64。
 准备解压 .../08-libcc1-0_14.2.0-4ubuntu2~24.04_amd64.deb  ...
 
-正在解压 libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ....................................................................................] 
+正在解压 libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ....................................................................................]
 正在选中未选择的软件包 libitm1:amd64。
 准备解压 .../09-libitm1_14.2.0-4ubuntu2~24.04_amd64.deb  ...
 
-********************************************************************      
+********************************************************************
 
-update-alternatives: 使用 /usr/bin/g++ 来在自动模式中提供 /usr/bin/c++ (c++)#####################################################...] 
+update-alternatives: 使用 /usr/bin/g++ 来在自动模式中提供 /usr/bin/c++ (c++)#####################################################...]
 正在设置 build-essential (12.10ubuntu1) ...
 
-正在处理用于 man-db (2.12.0-4build2) 的触发器 ...#################################################################################..] 
+正在处理用于 man-db (2.12.0-4build2) 的触发器 ...#################################################################################..]
 正在处理用于 libc-bin (2.39-0ubuntu8.3) 的触发器 ...
 ```
 
@@ -655,7 +655,7 @@ In /home/zhenxun/.cache/pypoetry/artifacts/19/6f/d4/e408c18242c36038a71ebe1dccde
 
 </details>
 
-:::tipwen
+:::tip
 下载依赖途中如遇报错，请删除目录下的 `poetry.lock` 文件后重新运行命令
 :::
 
@@ -703,7 +703,7 @@ FFMPEG playwright build v1010 downloaded to /home/zhenxun/.cache/ms-playwright/f
 
 ```shell
 zhenxun@zhenxun:~/zhenxun_bot$ mkdir data/db
-zhenxun@zhenxun:~/zhenxun_bot$ 
+zhenxun@zhenxun:~/zhenxun_bot$
 ```
 
 ###### 修改配置文件`.env.dev`
@@ -750,7 +750,7 @@ SELF_NICKNAME="小真寻"
 
 # 官bot appid:bot账号
 QBOT_ID_DATA = '{
-    
+
 }'
 
 # 数据库配置
@@ -786,7 +786,7 @@ PORT = 8080
   <summary>点击查看详细输出</summary>
 
 ```python
-zhenxun@zhenxun:~/zhenxun_bot$ poetry run python bot.py 
+zhenxun@zhenxun:~/zhenxun_bot$ poetry run python bot.py
 Warning: Found deprecated key 'default' or 'secondary' in pyproject.toml configuration for source ali. Please provide the key 'priority' instead. Accepted values are: 'default', 'primary', 'secondary', 'supplemental', 'explicit'.
 Warning: Found deprecated priority 'default' for source 'ali' in pyproject.toml. You can achieve the same effect by changing the priority to 'primary' and putting the source first.
 11-29 20:14:07 [SUCCESS] nonebot | NoneBot is initializing...

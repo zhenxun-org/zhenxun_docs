@@ -93,6 +93,17 @@
   color: #000;
 }
 
+.qq-message.mid {
+  justify-content: center;
+}
+
+.qq-message.mid .qq-text{
+  font-size: 13px;
+  color: #000;
+  border: none;
+  box-shadow: none;
+}
+
 .qq-message.right {
   justify-content: flex-end;
 }
@@ -114,7 +125,6 @@
 }
 
 .qq-avatar-xun {
-
   background-image: url('/static/img/chat/xun.png');
   background-size: cover;
   background-position: center;
@@ -123,7 +133,6 @@
 }
 
 .qq-avatar-hua {
-
   background-image: url('/static/img/chat/hua.png');
   background-size: cover;
   background-position: center;

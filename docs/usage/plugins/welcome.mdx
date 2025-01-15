@@ -1,0 +1,51 @@
+---
+title: 群欢迎消息(welcome_message)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+每当新成员入群时，会发送欢迎消息。
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 设置欢迎消息 [欢迎文本] ?[-at]
+  - 说明: 设置群欢迎消息，当消息中包含 -at 时会at入群用户
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "设置欢迎消息 欢迎来到真寻的小屋" },
+    {
+      position: "left",
+      msg: `设置欢迎消息成功:\n欢迎来到真寻的小屋`,
+    },
+    { position: "mid", msg: "#(296acb)穗月枫#(000000)加入了群聊。#(296acb)点击欢迎TA吧"},
+    {
+      position: "left",
+      msg: `欢迎来到真寻的小屋`,
+    },
+    { position: "right", msg: "设置欢迎消息 欢迎来到真寻的小屋-at" },
+    {
+      position: "left",
+      msg: `设置欢迎消息成功:\n欢迎来到真寻的小屋-at`,
+    },
+    { position: "mid", msg: "#(296acb)西宫茉莉#(000000)加入了群聊。#(296acb)点击欢迎TA吧" },
+    {
+      position: "left",
+      msg: `这个可以不打招呼吗Σ( ° △ °|||)`,
+    },
+    { position: "right", msg: "不礼貌哟~真寻酱你今天又没化妆" },
+    {
+      position: "left",
+      msg: `@西宫茉莉欢迎来到真寻的小屋(つд⊂)`,
+    },
+  ]}
+/>
