@@ -22,7 +22,7 @@ const TextParser = ({ initialText }) => {
         const span = document.createElement("span");
 
         span.style.color = "#" + color;
-        span.title = color.toLowerCase();
+        // span.title = color.toLowerCase();
         span.textContent = textPart;
         return span.outerHTML;
       }).replace(/\$\(([^)]+)\)/g, (match, imagePath) => {

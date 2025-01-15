@@ -86,6 +86,10 @@ const config = {
             label: "开发文档",
           },
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             type: "docSidebar",
             sidebarId: "faqSidebar",
             position: "right",
