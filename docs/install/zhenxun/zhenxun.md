@@ -22,10 +22,9 @@ import TabItem from '@theme/TabItem';
 ---
 
 ```shell
-pip3 install poetry     # 使用poetry管理python包
+pip install poetry     # 使用poetry管理python包
 poetry install          # 安装依赖
 
-poetry shell            # 进入虚拟环境
 ```
 
 基础配置
@@ -86,9 +85,10 @@ PLATFORM_SUPERUSERS = '
 ---
 
 ```bash
-python3 bot.py
-# or
-python bot.py
+poetry run python bot.py
+
+## 如果你想要安装包，使用以下命令，以httpx为例子
+poetry run pip install httpx
 ```
 
 #### 当你的控制台出现以下日志，说明你已经成功了🎉🎉
