@@ -75,6 +75,12 @@ const config = {
           },
           {
             type: "docSidebar",
+            sidebarId: "beginnerSidebar",
+            position: "left",
+            label: "整合包文档",
+          },
+          {
+            type: "docSidebar",
             sidebarId: "usageSidebar",
             position: "left",
             label: "使用文档",
@@ -86,8 +92,8 @@ const config = {
             label: "开发文档",
           },
           {
-            type: 'search',
-            position: 'right',
+            type: "search",
+            position: "right",
           },
           {
             type: "docSidebar",
@@ -168,23 +174,23 @@ const config = {
       },
     }),
 
-    themes: [
-      [
-        // @ts-ignore
-        require.resolve("@easyops-cn/docusaurus-search-local"),
-        /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-        // @ts-ignore
-        ({
-          hashed: true,
-          language: ["en", "zh"],
-          indexDocs: true,
-          indexBlog: false,
-          indexPages: false,
-          docsRouteBasePath: "/",
-          searchResultLimits: 15,
-        }),
-      ],
+  themes: [
+    [
+      // @ts-ignore
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      // @ts-ignore
+      ({
+        hashed: true,
+        language: ["en", "zh"],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: "/",
+        searchResultLimits: 15,
+      }),
     ],
-};
+  ],
+}
 
 export default config
