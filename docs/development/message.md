@@ -16,7 +16,7 @@ async def _():
     # 发送文本
     await MessageUtils.build_message("你好").send()
     # 发送图片
-    # 图片数据可以是BuildImage, bytes, https, Path, base64, BytesIO
+    # 图片数据可以是BuildImage, bytes, Path, base64, BytesIO
     img = ...
     await MessageUtils.build_message(img).send()
     # 发送图片和文本

@@ -13,25 +13,36 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-下载
----
+##  下载
 
-从 [HibiKier / zhenxun_bot](https://github.com/HibiKier/zhenxun_bot) clone代码 或 直接下载 [压缩包](https://github.com/HibiKier/zhenxun_bot/archive/refs/heads/main.zip) 解压
 
-安装依赖包
----
+从 [HibiKier / zhenxun_bot](https://github.com/zhenxun-org/zhenxun_bot) clone代码 或 直接下载 [压缩包](https://github.com/zhenxun-org/zhenxun_bot/archive/refs/heads/main.zip) 解压
+
+## 安装依赖包
+
+### 安装poetry
 
 ```shell
-pip3 install poetry     # 使用poetry管理python包
-poetry install          # 安装依赖
-
-poetry shell            # 进入虚拟环境
+pip install poetry
 ```
 
-基础配置
----
+### 安装依赖
 
-#### 设置超级用户，打开 **.env.dev** 文件，在`SUPERUSERS`和`qq`中添加自己的QQ
+```shell
+poetry install
+```
+
+:::warning
+如果提示找不到命令，你可以尝试使用以下命令
+```shell
+python -m poetry install
+```
+:::
+
+
+## 基础配置
+
+### 设置超级用户，打开 **.env.dev** 文件，在`SUPERUSERS`和`qq`中添加自己的QQ
 
 ```python title="env.dev"
 SUPERUSERS=["123456789"]
@@ -46,7 +57,7 @@ PLATFORM_SUPERUSERS = '
 '
 ```
 
-#### 数据库配置
+### 数据库配置
 
 <Tabs>
   <TabItem value="Postgresql" label="Postgresql" default>
@@ -78,7 +89,7 @@ PLATFORM_SUPERUSERS = '
   </TabItem>
 </Tabs>
 
-#### 基础插件配置
+### 基础插件配置
 
 文件保存在 **data/config.yaml**，所有真寻相关插件都在使用该配置文件，按需修改
 
@@ -86,9 +97,7 @@ PLATFORM_SUPERUSERS = '
 ---
 
 ```bash
-python3 bot.py
-# or
-python bot.py
+poetry run python bot.py
 ```
 
 #### 当你的控制台出现以下日志，说明你已经成功了🎉🎉
@@ -98,6 +107,17 @@ python bot.py
 08-14 23:18:44 [INFO] uvicorn | Application startup complete.
 08-14 23:18:44 [INFO] uvicorn | Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
 ```
+
+:::warning
+如果遇到 playwright 安装相关的报错（以下）
+
+<img src={require("/img/zhenxun/install-playwright.png").default} width="500" />
+
+可以尝试使用以下命令后再运行
+```shell
+poetry run playwright install
+```
+:::
 
 :::tip 提示
 当前版本真寻本体与插件库分离，你可以在以下获取插件或其他相关，或通过与真寻的对话命令安装插件（插件商店）

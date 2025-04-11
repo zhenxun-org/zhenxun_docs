@@ -60,6 +60,7 @@ const sidebars = {
     "development/shop",
     "development/message",
     "development/withdraw",
+    "development/utility_methods",
   ],
   usageSidebar: [
     {

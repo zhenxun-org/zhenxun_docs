@@ -50,7 +50,7 @@ async def add_gold(
     参数:
         user_id: 用户id
         gold: 金币
-        source: 来源
+        source: 来源，一般是插件模块名
         platform: 平台.
     """
     ...
@@ -177,7 +177,7 @@ group_list, platform = await PlatformUtils.get_group_list(bot)
 ```python
 from nonebot import on_command, Bot
 from nonebot_plugin_uninfo import Uninfo
-from zhenxun.utils.platform import get_platform
+from zhenxun.utils.platform import PlatformUtils
 
 _matcher = on_command("test")
 

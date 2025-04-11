@@ -11,6 +11,6 @@ Mysql安装
 
 没写，建议用Sqlite
 
-![_](/img/em/dq.jpg)
+<img src={require("/img/em/dq.jpg").default} width="200" />
 
 :::
