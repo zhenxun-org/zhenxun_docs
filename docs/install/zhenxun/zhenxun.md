@@ -98,7 +98,18 @@ PLATFORM_SUPERUSERS = '
 
 ```bash
 poetry run python bot.py
+
+
+## 如果你想要安装包，使用以下命令，以httpx为例子
+poetry run pip install httpx
 ```
+:::tip
+如果你想要安装包，使用以下命令，以httpx为例子
+```bash
+poetry run pip install httpx
+```
+
+:::
 
 #### 当你的控制台出现以下日志，说明你已经成功了🎉🎉
 
