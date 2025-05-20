@@ -7,6 +7,16 @@ type Message = {
   position: 'left' | 'mid' | 'right';
   msg?: string;
   imgSrc?: string;
+  reply?: string;  // 添加引用消息内容
+};
+
+const ReplyMessage = ({ content }: { content: string }) => {
+  return (
+    <div className="qq-reply-message">
+      <div className="qq-reply-bar"></div>
+      <div className="qq-reply-content">{content}</div>
+    </div>
+  );
 };
 
 type MessengerProps = {
@@ -54,23 +64,24 @@ const Messenger: React.FC<MessengerProps> = ({ msgs }) => {
         <div className='chat-container'>
           <div className="qq-chat-content">
             {msgs.map((message, index) => (
-                <div key={index} className={`qq-message ${message.position}`}>
-                  {message.position === 'left' && <div className="qq-avatar qq-avatar-xun"></div>}
-                  <div className="qq-text">
-                    {message.imgSrc && (
-                      <img src={`/zhenxun_bot/${message.imgSrc}`} alt="图片" className="qq-image" />
-                    )}
-                    {message.msg && (
-                      message.position === 'mid' ? (
-                        <div className="qq-text-center"><TextParser initialText={message.msg}/></div>
-                      ) : (
-                        <div>{message.msg}</div>
-                      )
-                    )}
-                  </div>
-                  {message.position === 'right' && <div className="qq-avatar qq-avatar-hua"></div>}
+              <div key={index} className={`qq-message ${message.position}`}>
+                {message.position === 'left' && <div className="qq-avatar qq-avatar-xun"></div>}
+                <div className="qq-text">
+                  {message.reply && <ReplyMessage content={message.reply} />}
+                  {message.imgSrc && (
+                    <img src={`/zhenxun_bot/${message.imgSrc}`} alt="图片" className="qq-image" />
+                  )}
+                  {message.msg && (
+                    message.position === 'mid' ? (
+                      <div className="qq-text-center"><TextParser initialText={message.msg}/></div>
+                    ) : (
+                      <div>{message.msg}</div>
+                    )
+                  )}
                 </div>
-              ))}
+                {message.position === 'right' && <div className="qq-avatar qq-avatar-hua"></div>}
+              </div>
+            ))}
           </div>
         </div>
       </div>
