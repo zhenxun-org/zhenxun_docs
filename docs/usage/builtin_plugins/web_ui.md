@@ -17,13 +17,13 @@ subSidebar: false
 
 ### 示例
 
-![_](/docs/builtin_plugins/web_ui/0.png)
-![_](/docs/builtin_plugins/web_ui/1.png)
-![_](/docs/builtin_plugins/web_ui/2.png)
-![_](/docs/builtin_plugins/web_ui/3.png)
-![_](/docs/builtin_plugins/web_ui/4.png)
-![_](/docs/builtin_plugins/web_ui/5.png)
-![_](/docs/builtin_plugins/web_ui/6.png)
-![_](/docs/builtin_plugins/web_ui/7.png)
+![_](/docs/builtin_plugins/web_ui/new/0.jpg)
+![_](/docs/builtin_plugins/web_ui/new/1.jpg)
+![_](/docs/builtin_plugins/web_ui/new/2.jpg)
+![_](/docs/builtin_plugins/web_ui/new/3.jpg)
+![_](/docs/builtin_plugins/web_ui/new/4.jpg)
+![_](/docs/builtin_plugins/web_ui/new/5.jpg)
+![_](/docs/builtin_plugins/web_ui/new/6.jpg)
+![_](/docs/builtin_plugins/web_ui/new/7.jpg)
 
 
