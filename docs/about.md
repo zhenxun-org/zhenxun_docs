@@ -68,7 +68,7 @@ Linux，可以使用 __Ubuntu__ 等，Windows也可以获得很好的支持
 
 ## __开源协议__
 
-本项目使用 [AGPL-3.0 License](https://github.com/HibiKier/zhenxun_bot/blob/main/LICENSE) 作为开源协议。
+本项目使用 [AGPL-3.0 License](https://github.com/zhenxun-org/zhenxun_bot/blob/main/LICENSE) 作为开源协议。
 
 ## __特别感谢__
 
