@@ -25,5 +25,9 @@ subSidebar: false
 ![_](/docs/builtin_plugins/web_ui/new/5.jpg)
 ![_](/docs/builtin_plugins/web_ui/new/6.jpg)
 ![_](/docs/builtin_plugins/web_ui/new/7.jpg)
+![_](/docs/builtin_plugins/web_ui/new/8.jpg)
+![_](/docs/builtin_plugins/web_ui/new/9.jpg)
+![_](/docs/builtin_plugins/web_ui/new/10.jpg)
+
 
 
