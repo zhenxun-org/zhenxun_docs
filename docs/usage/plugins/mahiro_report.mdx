@@ -1,0 +1,42 @@
+---
+title: 真寻日报(mahiro_report)
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+小真寻记者为你献上今天报道！
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 配置项
+
+- `alapi_token`
+  - 类型: `str`
+  - 默认值: ``
+  - 说明: 60s看世界api替换，当存在该配置时，使用alapi早报api，在https://admin.alapi.cn/user/login登录后获取token
+- `auto_send`
+  - 类型: `bool`
+  - 默认值: `true`
+  - 说明: 每日9点自动发送日报
+  
+  
+### 指令
+
+- 真寻日报
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "真寻日报" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/mahiro_report/0.png",
+    },
+  ]}
+/>
