@@ -1,0 +1,36 @@
+---
+title: 复读(fudu)
+sidebarDepth: 0
+
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+群友的本质是什么？是复读机哒！
+
+- 插件类型: `DEPENDANT`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 无
+  - 说明:  重复3次相同的消息时会复读
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "复读" },
+    { position: "right", msg: "复读" },
+    { position: "right", msg: "复读" },
+    {
+      position: "left",
+      msg: "复读"
+    },
+
+  ]}
+/>

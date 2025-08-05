@@ -16,6 +16,49 @@ import Messenger from "/src/components/Messenger"
 ### 配置项
 
 - [BYM AI 插件使用指南](https://github.com/zhenxun-org/zhenxun_bot_plugins/tree/main/plugins/bym_ai#readme)
+- `bym_ai`
+  - `BYM_AI_CHAT_URL`
+    - 说明: ai聊天接口地址，可以填入url和平台名称，当你使用平台名称时，默认使用平台官方api, 目前有[gemini, DeepSeek, 硅基流动, 阿里云百炼, 百度智能云, 字节火山引擎], 填入对应名称即可, 如 gemini
+    - 类型: `str`
+  - `BYM_AI_CHAT_TOKEN`
+    - 说明: 你刚刚获取的 API KEY，可以有多个进行轮询
+    - 类型: `str`
+  - `BYM_AI_CHAT_MODEL`
+    - 说明: ai聊天接口模型
+    - 类型: `	str`
+  - `BYM_AI_CHAT`
+    - 说明: 是否开启伪人回复
+    - 类型: `bool`
+    - 默认值: `false`
+  - `BYM_AI_CHAT_RATE`
+    - 说明: 伪人回复概率，范围 0-100
+    - 类型: `	float`
+    - 默认值: `0.001`
+  - `BYM_AI_TTS_URL`
+    - 说明: TTS 接口地址
+    - 类型: `bool`
+  - `BYM_AI_TTS_TOKEN`
+    - 说明: 你刚刚获取的 API KEY，可以有多个进行轮询
+    - 类型: `str`
+  - `BYM_AI_TTS_VOICE`
+    - 说明: TTS 音色
+    - 类型: `bool`
+  - `BYM_AI_CHAT_SMART`
+    - 说明: 是否开启智能回复
+    - 类型: `bool`
+    - 默认值: `true`
+  - `ENABLE_IMPRESSION`
+    - 说明: 使用签到数据作为基础好感度
+    - 类型: `bool`
+    - 默认值: `true`
+  - `CACHE_SIZE`
+    - 说明: 缓存大小
+    - 类型: `int`
+    - 默认值: `40`
+  - `ENABLE_GROUP_CHAT`
+    - 说明: 是否开启群聊
+    - 类型: `bool`
+    - 默认值: `true`
   
 ### 指令
 
