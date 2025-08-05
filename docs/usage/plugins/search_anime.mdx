@@ -1,0 +1,41 @@
+---
+title: 搜番(search_anime)
+sidebarDepth: 0
+
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+找不到想看的动漫吗？
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 搜索动漫资源
+  - 说明:  搜番 [番剧名称或者关键词]
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "搜番 别当欧尼酱了" },
+    {
+      position: "left",
+      msg: "开始搜番 别当欧尼酱了..."
+    },
+    { 
+      position: "left",
+      msg: "搜索 别当欧尼酱了 结果 (耗时114.5秒)：\n\n" +
+        "[1] 2021年新番《别当欧尼酱了》...\n" +
+        "[2] 2021年新番《别当欧尼酱了》剧场版...\n" +
+        "..."
+    },
+
+  ]}
+/>

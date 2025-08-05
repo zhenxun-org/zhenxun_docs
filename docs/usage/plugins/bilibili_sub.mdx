@@ -1,0 +1,49 @@
+---
+title: B站订阅(bilibili_sub)
+sidebarDepth: 0
+
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+非常便利的B站订阅通知
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 添加订阅 ['主播'/'UP'/'番剧'] [id/链接/番名]
+- 删除订阅 ['主播'/'UP'/'id'] [id]
+- 查看订阅
+- 更多指令请发送[帮助 B站订阅 -s]
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "添加订阅 UP 1503822" },
+    {
+      position: "left",
+      msg: "订阅成功！\nUP主名称：闇夜黑猫Official\n用户UID：1503822",
+    },
+    {  position: "right", msg: "查看订阅", },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/bilibili_sub/0.png",
+    },
+    {
+      position: "right",
+      msg: "删除订阅 UP 1503822",
+    },
+    {
+      position: "left",
+      msg: "删除订阅id  1503822 成功...",
+    },
+
+  ]}
+/>

@@ -1,0 +1,34 @@
+---
+title: 词云(word_clouds)
+sidebarDepth: 0
+
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+看看自己说了什么话
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 词云 | 今日词云 | 昨日词云 | 本周词云
+  - 说明: 更多帮助请查看[词云插件使用指南](https://github.com/zhenxun-org/zhenxun_bot_plugins/blob/main/plugins/word_clouds/README.md)
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right", msg: "词云" },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/word_clouds/0.jpg"
+    },
+
+  ]}
+/>

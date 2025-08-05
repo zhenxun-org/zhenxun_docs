@@ -1,0 +1,41 @@
+---
+title: 搜图(search_image)
+sidebarDepth: 0
+
+subSidebar: false
+---
+
+import Messenger from "/src/components/Messenger"
+
+### 说明
+
+以图搜图，看破本源
+
+- 插件类型: `NORMAL`
+- 响应规则: `全局`
+- 插件等级: `5`
+
+### 指令
+
+- 识别图片
+  - 说明:  识图 [图片]
+
+### 示例
+
+<Messenger
+  msgs={[
+    { position: "right",
+      imgSrc: "docs/builtin_plugins/search_image/0.png",
+      reply: "识图"
+    },
+    { 
+      position: "left",
+      msg: "开始识图..."
+    },
+    {
+      position: "left",
+      imgSrc: "docs/builtin_plugins/search_image/1.png"
+    },
+
+  ]}
+/>

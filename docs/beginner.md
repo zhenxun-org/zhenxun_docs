@@ -10,14 +10,14 @@ subSidebar: false
 ## 下载压缩包文件
 
 - **百度云：**  
-  https://pan.baidu.com/s/1ph4yzx1vdNbkxm9VBKDdgQ?pwd=971j
+  https://pan.baidu.com/s/1MKGOoIgQW1qom_KT3rNhlg?pwd=t7iz
 
-- **天翼云：**  
-  https://cloud.189.cn/web/share?code=jq67r2i2E7Fb  
-  访问码：8wxm
+- **夸克云盘：**  
+  https://pan.quark.cn/s/b4dc6cb8fb08  
+  访问码：Yi46
 
 - **Google Drive：**  
-  https://drive.google.com/file/d/1cc3Dqjk0x5hWGLNeMkrFwWl8BvsK6KfD/view?usp=drive_link
+  https://drive.google.com/drive/folders/1dcTWhPZhSt9WqLehyjF6Gj0CXQCS4OWh?usp=drive_link
 
 ## 解压文件
 
