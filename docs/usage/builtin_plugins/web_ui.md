@@ -28,6 +28,3 @@ subSidebar: false
 ![_](/docs/builtin_plugins/web_ui/new/8.jpg)
 ![_](/docs/builtin_plugins/web_ui/new/9.jpg)
 ![_](/docs/builtin_plugins/web_ui/new/10.jpg)
-
-
-
