@@ -19,29 +19,45 @@ import Messenger from "/src/components/Messenger"
 
 ### 指令
 
-- 检查更新 ?['dev', 'main', 'resource'] ?[-r]
-  - 说明: 在'dev', 'main'中更新其中一个版本, 可以使用-r 参数同时更新资源文件，当使用'resource'时单独更新资源文件
+  - 检查更新 [main|release|resource|webui] ?[-r] ?[-f] ?[-z] ?[-t]
+    - main: main分支
+    - release: 最新release
+    - resource: 资源文件
+    - webui: webui文件
+    - -r: 下载资源文件，一般在更新main或release时使用
+    - -f: 强制更新，一般用于更新main时使用（仅git更新时有效）
+    - -s: 更新源，为 git 或 ali（默认使用ali）
+    - -z: 下载zip文件进行更新（仅git有效）
+    - -t: 更新方式，git或download（默认使用git）
+    - git: 使用git pull（推荐）
+    - download: 通过commit hash比较文件后下载更新（仅git有效）
 
 ### 示例
+- 检查更新 main
+- 检查更新 main -r
+- 检查更新 main -f
+- 检查更新 release -r
+- 检查更新 resource
+- 检查更新 webui
 
 <Messenger
   msgs={[
-    { position: "right", msg: "检查更新 release" },
+    { position: "right", msg: "检查更新 main -f" },
     {
       position: "left",
-      msg: `版本更新完成
-版本: v0.2.1 -> v0.2.2
-请重新启动真寻以完成更新!`,
-      reply: "检查更新 release"
+      msg: `检测真寻已更新，当前版本：0.2.1
+开始更新...`
     },
-    { position: "right", msg: "检查更新 main -r" },
+    {
+      position: "left",
+      msg: `真寻更新完成，开始安装依赖...`
+    },
     {
       position: "left",
       msg: `版本更新完成
 版本: v0.2.1 -> v0.2.2
-请重新启动真寻以完成更新!
-资源文件更新完成！`,
-      reply: "检查更新 main -r"
+变更文件个数: 0（阿里云更新不支持查看变更文件）
+请重新启动真寻以完成更新!`,
     },
   ]}
 />

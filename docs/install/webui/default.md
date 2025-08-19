@@ -54,7 +54,7 @@ web-ui:
 
 ### 2. 下载WebUI
 
-点击 [此处](https://mirror.ghproxy.com/https://github.com/HibiKier/zhenxun_bot_webui/archive/refs/heads/dist.zip) 下载dist文件夹
+点击 [此处](https://ghfast.top/https://github.com/HibiKier/zhenxun_bot_webui/archive/refs/heads/dist.zip) 下载dist文件夹
 
 ### 3.移动文件
 
