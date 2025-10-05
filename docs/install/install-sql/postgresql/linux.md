@@ -33,15 +33,15 @@ psql
 * 创建用户（此步骤可跳过）
 
 ```bash
-        #  用户名↓                # 密码↓
-CREATE USER uname WITH PASSWORD 'zhenxun';
+        # 用户名↓                # 密码↓
+CREATE USER uname WITH PASSWORD '密码请自行填写';
 ```
 
 * 更改密码
 
 ```bash
                                   # 密码↓
-alter user postgres with password 'zhenxun_bot'; 
+alter user postgres with password '你需要设置的新密码'; 
 ```
 
 * 创建数据库

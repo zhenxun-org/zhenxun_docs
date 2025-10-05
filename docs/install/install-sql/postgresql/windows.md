@@ -31,7 +31,7 @@ Windows下安装
 4.数据存储路径（没有特殊情况一般默认即可），`Next`  
 ![_](/img/install/install_sql/install_4.png)
 
-5.输入postgres用户的密码，例如: `zhenxun_bot`  
+5.输入postgres用户的密码，例如: `密码需要自行设置`  
 ![_](/img/install/install_sql/install_5.png)
 
 6.默认端口，`Next`  
