@@ -110,14 +110,14 @@ ImportError: DLL load failed while importing ujson: 找不到指定模块。
 ## 完成
 
 至此真寻部分已经完全安装完成  
-你可以跳转到 [安装QQ](https://hibikier.github.io/zhenxun_bot/install/install-qq) 进行下一步
+你可以跳转到 [安装QQ](https://zhenxun-org.github.io/zhenxun_bot/install/install-qq) 进行下一步
 
 
 <img src={require("/img/beginner/8.png").default} width="700" />
 
 ## 测试
 
-如果你 [安装QQ](https://hibikier.github.io/zhenxun_bot/install/install-qq) 完成并且成功连接  
+如果你 [安装QQ](https://zhenxun-org.github.io/zhenxun_bot/install/install-qq) 完成并且成功连接  
 可以通过 `签到` 命令进行测试，`签到`是真寻最基本和重要的功能
 
 <img src={require("/img/beginner/9.png").default} width="700" />
