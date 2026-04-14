@@ -131,16 +131,8 @@ uv add httpx==0.27.2
 08-14 23:18:44 [INFO] uvicorn | Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
 ```
 
-:::warning
-如果遇到 playwright 安装相关的报错（以下）
 
-<img src={require("/img/zhenxun/install-playwright.png").default} width="500" />
 
-可以尝试使用以下命令后再运行
-```shell
-poetry run playwright install
-```
-:::
 
 :::tip 提示
 当前版本真寻本体与插件库分离，你可以在以下获取插件或其他相关，或通过与真寻的对话命令安装插件（插件商店）
