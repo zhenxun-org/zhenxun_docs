@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 在终端执行以下命令：
 
 ```shell
-git clone https://oauth2:pt-aztjYgAjnoAXejjfmQXkgxy4_0e2f3e6f-d09b-4182-bee1-45e1db244de2@codeup.aliyun.com/67a361cf556e6cdab537117a/zhenxun-org/zhenxun_bot.git
+git clone https://github.com/HibiKier/zhenxun_bot.git
 ```
 #### 克隆完成后进入项目根目录
 ```shell
