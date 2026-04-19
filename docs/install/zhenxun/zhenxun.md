@@ -1,5 +1,5 @@
 ---
-title: 安装小真寻(手动)
+title: 安装小真寻(手动 - uv 部署)
 subSidebar: false
 id: install-zhenxun
 ---
@@ -13,31 +13,44 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-##  下载
+## 下载
+
+你可以通过以下两种方式之一获取项目代码：
+
+### 方式一：使用 Git Clone (推荐)
+
+在终端执行以下命令：
+
+```shell
+git clone https://github.com/HibiKier/zhenxun_bot.git
+```
+#### 克隆完成后进入项目根目录
+```shell
+cd zhenxun_bot
+```
 
 
-从 [HibiKier / zhenxun_bot](https://github.com/zhenxun-org/zhenxun_bot) clone代码 或 直接下载 [压缩包](https://github.com/zhenxun-org/zhenxun_bot/archive/refs/heads/main.zip) 解压
+### 方式二：直接下载
+从 [zhenxun-org / zhenxun_bot](https://github.com/zhenxun-org/zhenxun_bot) clone代码 或 直接下载 [压缩包](https://github.com/zhenxun-org/zhenxun_bot/archive/refs/heads/main.zip) 并解压，随后在终端进入解压后的文件夹。
+
 
 ## 安装依赖包
 
-### 安装poetry
+### 安装 UV 管理工具
+
+`uv` 是高性能的 Python 包管理器，用于替代传统的 pip 和 poetry。
 
 ```shell
-pip install poetry
+pip install uv
 ```
 
-### 安装依赖
+### 安装项目依赖
+在项目根目录下执行以下命令，`uv` 会自动创建虚拟环境并同步所有依赖：
 
 ```shell
-poetry install
+uv sync
 ```
 
-:::warning
-如果提示找不到命令，你可以尝试使用以下命令
-```shell
-python -m poetry install
-```
-:::
 
 
 ## 基础配置
@@ -95,18 +108,17 @@ PLATFORM_SUPERUSERS = '
 
 启动
 ---
-
+使用 uv run 来启动 Bot，它会自动关联当前目录下的虚拟环境：
 ```bash
-poetry run python bot.py
-
-
-## 如果你想要安装包，使用以下命令，以httpx为例子
-poetry run pip install httpx
+uv run zx
 ```
 :::tip
 如果你想要安装包，使用以下命令，以httpx为例子
 ```bash
-poetry run pip install httpx
+uv add httpx
+```
+```bash
+uv add httpx==0.27.2
 ```
 
 :::
@@ -119,16 +131,8 @@ poetry run pip install httpx
 08-14 23:18:44 [INFO] uvicorn | Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
 ```
 
-:::warning
-如果遇到 playwright 安装相关的报错（以下）
 
-<img src={require("/img/zhenxun/install-playwright.png").default} width="500" />
 
-可以尝试使用以下命令后再运行
-```shell
-poetry run playwright install
-```
-:::
 
 :::tip 提示
 当前版本真寻本体与插件库分离，你可以在以下获取插件或其他相关，或通过与真寻的对话命令安装插件（插件商店）
